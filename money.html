@@ -26,6 +26,7 @@
     <a href="funds.html">第4章 投資信託とインデックス</a>
     <a href="stocks.html">第5章 個別株の基礎</a>
     <a href="tax.html">第6章 制度と税金</a>
+    <a href="detail.html">制度の詳細</a>
     <a href="start.html">第7章 始め方と失敗パターン</a>
     <a href="glossary.html">用語集</a>
     <a href="sources.html">出典・更新履歴・免責</a>
@@ -37,8 +38,8 @@
 <section id="ch1" aria-labelledby="ch1-title">
   <h1 id="ch1-title">第1章　お金の基本</h1>
   <p class="confirm">最終確認日：2026年11月15日。物価と制度は更新されます。最新は総務省統計局、預金保険機構、国税庁で確認してください。</p>
-  <h2>通帳の100万円は、来年も同じ生活を買える？</h2>
-  <p>通帳に書いてあるのは、円の枚数です。店の値段が上がれば、同じ100万円で買える量は減ります。</p>
+  <h2>預金は、金額は守っても、買える量までは守らない</h2>
+  <p>通帳の100万円は、円の枚数です。店の値段が上がると、同じ金額で買える量は減ります。たとえば2026年9月の消費者物価は、前年の同じ月より2.1%高くなっています（全国、2025年＝100で102.2。公表は2026年10月23日）。これは過ぎた月の数字で、これからの予想ではありません。<a href="sources.html#src-cpi">総務省統計局</a></p>
 
   <figure class="figure"><svg viewBox="0 0 360 380" aria-hidden="true">
   <rect x="16" y="16" width="328" height="130" rx="16" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/>
@@ -51,17 +52,13 @@
   <text x="180" y="194" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">物価が上がったあと</text>
   <text x="180" y="222" text-anchor="middle" font-size="18" fill="var(--text)">同じ1,000円で 1つ</text>
   <circle cx="180" cy="258" r="16" fill="var(--c2)"/>
-  <text x="180" y="324" text-anchor="middle" font-size="16" fill="var(--text)">円の額面が同じでも</text>
-  <text x="180" y="350" text-anchor="middle" font-size="16" fill="var(--text)">買える量は減りえます</text>
-  </svg><figcaption>円の数字が同じでも、物価が上がると買える量は減ります。</figcaption></figure>
-  <p>2026年9月の消費者物価（全国、2025年＝100）は102.2です。前年の同じ月より2.1%高くなっています。公表は2026年10月23日です。過ぎた月の統計で、これからの物価ではありません。<a href="sources.html#src-cpi">総務省統計局</a></p>
+  <text x="180" y="324" text-anchor="middle" font-size="16" fill="var(--text)">金額は同じでも</text>
+  <text x="180" y="350" text-anchor="middle" font-size="16" fill="var(--text)">買える量は減る</text>
+  </svg><figcaption>同じ金額でも、物価が上がると買える個数は減ります。</figcaption></figure>
   <p>円の数字を名目、買える量を実質と呼びます。物価が上がり続けることを、インフレと言います。</p>
-  <p>利息も同じ分け方です。契約の利率が名目金利、物価を差し引いたあとが実質金利です。</p>
-  <p class="formula">実質金利 ＝ (1 ＋ 名目金利) ÷ (1 ＋ インフレ率) − 1</p>
-  <p>差が小さいときは「名目金利 − インフレ率」で足ります。両方2.1%なら、実質は0です。預金の利率は、銀行と時期で変わります。</p>
-  <p>預貯金の利子には、原則として20.315%（所得税など15.315%、住民税5%）が天引きされます。確定申告で精算する税金ではありません。<a href="sources.html#src-nta-kurashi">国税庁「株式・配当・利子と税」</a></p>
-  <h2>銀行が潰れたとき、戻る円はどこまでか</h2>
-  <p>前の話は、円の数字が残っても買える量が減る、ということでした。次は、その円の数字自体が、どこまで戻るかです。</p>
+  <p>たとえば、預金が100万円のまま1年たち、物価が2.1%上がったとします。通帳の数字は減っていません。でも同じ買い物には、およそ102万1,000円が要ります。利息が税引き前で2.1%なら、100万円はおよそ102万1,000円になるので、買える量はほぼ同じです。利息がそれより低ければ、通帳の数字は増えても、買える量は減ります。預金の利率は、銀行と時期で変わります。</p>
+  <p>預貯金の利子には、原則として20.315%（所得税など15.315%、住民税5%）が天引きされます。<a href="sources.html#src-nta-kurashi">国税庁「株式・配当・利子と税」</a></p>
+  <h2>銀行が潰れたとき、戻るのは1,000万円まで</h2>
 
   <figure class="figure"><svg viewBox="0 0 360 360" aria-hidden="true">
   <rect x="16" y="36" width="156" height="150" rx="16" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/>
@@ -77,15 +74,12 @@
   <text x="180" y="230" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">決済用預金は、別枠で全額</text>
   <text x="180" y="260" text-anchor="middle" font-size="16" fill="var(--muted)">無利息・いつでも払い戻せる等</text>
   <text x="180" y="300" text-anchor="middle" font-size="16" fill="var(--text)">1,000万円を超える分は</text>
-  <text x="180" y="326" text-anchor="middle" font-size="16" fill="var(--text)">全額戻るとは限りません</text>
-  </svg><figcaption>利息のつく預金は、銀行ごとに元本1,000万円までと破綻日までの利息等が保護されます。銀行が違えば、別々に数えます。</figcaption></figure>
-<h3>預金保険</h3>
-  <div class="card fact">
-    <p><span class="badge fact">事実</span>預金保険の対象は、日本国内に本店のある銀行、信用金庫、信用組合、労働金庫などです。対象の金融機関の海外支店と、外国銀行の日本支店は対象外です。外貨預金と譲渡性預金も、保護の対象外です。<a href="sources.html#src-dic">預金保険機構</a></p>
-    <p>決済用預金は、全額保護です。条件は三つです。決済に使えること。預金者が、いつでも払い戻しを請求できること。利息がつかないこと。</p>
-    <p>利息のつく普通預金や定期預金は、1つの金融機関の中で合計します。預金者1人あたり、元本1,000万円までと、破綻した日までの利息が保護されます。1,000万円を超える分は、破綻した金融機関の財産の状況に応じて支払われ、一部が減ることがあります。同じ金融機関の複数の口座は、一人分として合算します。合併などのあと1年間は、関係した金融機関数に応じて、保護額が広がる特例があります。</p>
-    <p>証券会社の預かりは預金保険ではなく投資者保護基金、保険は契約者保護機構です。戻る金額は制度ごとに違います。<span class="badge warn">要確認</span>各制度の公式説明で確認してください。</p>
-  </div>
+  <text x="180" y="326" text-anchor="middle" font-size="16" fill="var(--text)">超えた分は減ることがある</text>
+  </svg><figcaption>銀行が違えば、1,000万円の枠は別々です。</figcaption></figure>
+  <p><span class="badge fact">事実</span> 利息のつく普通預金や定期預金は、1つの金融機関ごとに、元本1,000万円までと、破綻した日までの利息が戻ります。同じ銀行の口座は、一人分として合計します。銀行が違えば、それぞれ1,000万円までです。<a href="sources.html#src-dic">預金保険機構</a></p>
+  <p>たとえばA銀行に1,200万円、B銀行に800万円あるとします。A銀行が潰れると、戻る元本は1,000万円までです。残りの200万円は、その銀行の財産の状況に応じて支払われ、減ることがあります。B銀行の800万円は、別の枠です。</p>
+  <p>ただし、利息がつかない決済用預金は全額戻ります。条件は、決済に使えること、いつでも払い戻しを請求できること、利息がつかないことです。外貨預金、譲渡性預金、対象の金融機関の海外支店、外国銀行の日本支店は、この保護の外です。</p>
+  <p>証券会社に預けた株や投資信託は、預金保険の対象ではありません。戻る金額は制度ごとに違います。<span class="badge warn">要確認</span> 各制度の公式説明で確認してください。</p>
 
   <h2>投資に回す前に、分けておく現金</h2>
   <figure class="figure"><svg viewBox="0 0 360 310" aria-hidden="true">
@@ -97,11 +91,11 @@
   <text x="180" y="214" text-anchor="middle" font-size="18" fill="var(--text)">収入が止まっても</text>
   <text x="180" y="242" text-anchor="middle" font-size="18" fill="var(--text)">すぐ投資を売らなくて済む</text>
   <text x="180" y="278" text-anchor="middle" font-size="16" fill="var(--muted)">月数は家計によって違う</text>
-  </svg><figcaption>生活費の何か月分かを現金で置いておくと、収入が止まっても、すぐに投資を売らなくて済みます。</figcaption></figure>
-  <p>この現金を、生活防衛資金と呼ぶことがあります。何か月分がよいかは、法律では決まっていません。<span class="badge warn">要確認</span>収入が安定しているか、公的な保険でどこまで足りるかで違います。</p>
+  </svg><figcaption>生活費の何か月分かを、現金で分けておきます。</figcaption></figure>
+  <p>収入が止まった月に投資を売ると、下がった値段で売ることになるからです。この現金を、生活防衛資金と呼びます。何か月分がよいかは、法律では決まっていません。<span class="badge warn">要確認</span> 収入が安定しているか、公的な保険でどこまで足りるかで違います。</p>
 
-  <h2>利子にも利子が付くと、何年で2倍か</h2>
-  <p>利率が物価を上回る年が続くと、円の数字は増えていきます。増え方は、利子にも次の利子が付く計算です。</p>
+  <h2>2倍になる年数は、72を利率で割る</h2>
+  <p>利子にも次の利子が付く計算を、複利と言います。たとえば元本100、年10%なら、1年後は110、2年後は121です。2年目に増えた11のうち1は、前年の利子に付いた分です。</p>
 
   <figure class="figure"><svg viewBox="0 0 360 350" aria-hidden="true">
   <text x="180" y="32" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">複利の計算例（年10%）</text>
@@ -119,38 +113,12 @@
   <rect x="24" y="236" width="312" height="88" rx="14" fill="var(--view-bg)" stroke="var(--view)"/>
   <text x="180" y="270" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">72の法則は暗算の近似</text>
   <text x="180" y="298" text-anchor="middle" font-size="16" fill="var(--text)">6%なら 72÷6＝12年で約2倍</text>
-  </svg><figcaption>計算例です。元本100、年10%なら1年後110、2年後121。2年目に増えた11のうち1は、前年の利子に付いた分です。将来の利率ではありません。</figcaption></figure>
-<h3>72の法則</h3>
-  <div class="card mech">
-    <p>元本100、年10%なら、1年後は110、2年後は121です。2年目に増えた11のうち1は、前年の利子10に付いた分です。この計算を複利と言います。</p>
-    <p>2倍になる年数は、年利を小数にした r で、次の式です。</p>
-    <p class="formula">n ＝ ln(2) ÷ ln(1 ＋ r)</p>
-    <p>利率が小さいときは、72を利率（%）で割ると、だいたいの年数になります。6%なら 72÷6＝12年です。正確には約11.9年です。利率が高いほど、この72は「きりのよい目安」で、式そのものではありません。</p>
-  </div>
-
-  <h2>数字で見る</h2>
-  <div class="table-wrap">
-    <table>
-      <caption>第1章で確認した数字（2026年11月15日確認）</caption>
-      <thead><tr><th>項目</th><th>内容</th><th>出典</th></tr></thead>
-      <tbody>
-        <tr><td>消費者物価・総合</td><td>2026年9月、前年同月比＋2.1%（2025年＝100で102.2）。2026年10月23日公表</td><td><a href="sources.html#src-cpi">総務省統計局</a></td></tr>
-        <tr><td>利息のつく預金の保護</td><td>1金融機関ごと、元本1,000万円までと破綻日までの利息等</td><td><a href="sources.html#src-dic">預金保険機構</a></td></tr>
-        <tr><td>決済用預金</td><td>全額保護（無利息など三要件）</td><td><a href="sources.html#src-dic">預金保険機構</a></td></tr>
-        <tr><td>預貯金の利子の税</td><td>源泉分離で20.315%</td><td><a href="sources.html#src-nta-kurashi">国税庁</a></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2>よくある誤解</h2>
-  <ul>
-    <li>「預金は減らない」は、三つの話が混ざっています。円の数字、買える量、銀行が潰れたときに戻る範囲。円の数字が残っても、物価が上がれば買える量は減ります。利息のつく預金は、1つの金融機関ごとに元本1,000万円までです。</li>
-    <li>72の法則は、法律でも市場の規則でもありません。暗算のための目安です。</li>
-  </ul>
+  </svg><figcaption>年10%なら、100は1年後に110、2年後に121になります。</figcaption></figure>
+  <p>お金がおよそ2倍になる年数は、72を利率（%）で割ると出ます。たとえば6%なら、72÷6＝12年です。正確に計算すると約11.9年なので、72は暗算の目安です。</p>
 
   <h2>複利シミュレーター</h2>
   <div class="card">
-    <p><span class="badge view">考え方</span>下のグラフは、入力した年利が毎年続いたときの計算です。これから実際にその利率で増える、という意味ではありません。税金、手数料、物価の上昇は入っていません。</p>
+    <p><span class="badge view">考え方</span> 下のグラフは、入力した年利が毎年続いたときの計算です。税金、手数料、物価の上昇は入っていません。</p>
     <label class="field">毎月の積立額（円）<input id="c-pmt" type="number" inputmode="decimal" min="0" max="10000000" value="30000"></label>
     <label class="field">想定年利（%）<input id="c-rate" type="number" inputmode="decimal" min="-50" max="50" step="0.1" value="3"></label>
     <label class="field">年数<input id="c-years" type="number" inputmode="numeric" min="1" max="50" value="20"></label>
@@ -158,25 +126,14 @@
     <div class="legend" aria-hidden="true"><span><i class="swatch" style="background:var(--c3)"></i>元本</span><span><i class="swatch" style="background:var(--c1)"></i>運用益（仮定）</span></div>
     <div class="canvas-box"><canvas id="c-chart" data-h="240" role="img" aria-describedby="c-out"></canvas></div>
     <p id="c-out" class="result" aria-live="polite"></p>
-    <p class="formula">月末積立。月利＝(1＋年利)^(1/12)−1。終価＝積立額×((1＋月利)^月数−1)÷月利。年利0%のときは積立額×月数。</p>
   </div>
 
   <h2>理解チェック</h2>
-  <form class="quiz card" data-explain="利息のつく普通預金などは、1金融機関ごとに元本1,000万円までと破綻日までの利息等が保護されます。決済用預金は別枠で全額です。">
+  <form class="quiz card" data-explain="利息が2.1%で物価も2.1%なら、買える量はほぼ変わりません。">
     <fieldset>
-      <legend>問1　利息のつく普通預金の預金保険は、原則どうなっていますか。</legend>
-      <label><input type="radio" name="q11" value="a">すべての預金が、金額に関係なく全額保護される</label>
-      <label><input type="radio" name="q11" value="b">1金融機関ごとに、元本1,000万円までと破綻日までの利息等</label>
-      <label><input type="radio" name="q11" value="c">日本中の銀行を合計して、元本1,000万円まで</label>
-    </fieldset>
-    <button type="submit">答えを見る</button>
-    <p class="quiz-result" aria-live="polite"></p>
-  </form>
-  <form class="quiz card" data-explain="(1.021÷1.021)−1＝0です。名目の残高が増えても、物価が同じ割合で上がっていれば購買力はほぼ変わりません。近似の「2.1−2.1」でも0です。">
-    <fieldset>
-      <legend>問2　名目で2.1%増え、物価も2.1%上がったとき、実質の増加はおよそどれですか。</legend>
+      <legend>利息が2.1%で、物価も2.1%上がったとき、買える量はどうなりますか。</legend>
       <label><input type="radio" name="q12" value="a">2.1%増える</label>
-      <label><input type="radio" name="q12" value="b">およそ0</label>
+      <label><input type="radio" name="q12" value="b">およそ変わらない</label>
       <label><input type="radio" name="q12" value="c">4.2%増える</label>
     </fieldset>
     <button type="submit">答えを見る</button>
@@ -186,8 +143,9 @@
   <details>
     <summary>もう少し詳しく</summary>
     <div class="inner">
-      <p>72が69.3より少し大きいのは、ln(1＋r)＝r − r²/2 ＋ … と、r より少し小さいためです。分母を実際より大きく見積もる72は、数%前後で年数をやや多めに出し、暗算に向きます。正確に知りたいときは対数の式を使ってください。</p>
-      <p>預金保険の1,000万円は「口座ごと」ではありません。同じ金融機関の対象預金を一人分として合算します。銀行が違えば別枠です。対象は、銀行法上の銀行、信用金庫、信用組合、労働金庫などです。農林中央金庫、農業協同組合、漁業協同組合などは、別の貯金保険制度です。個別の金融機関が対象かは、預金保険機構の説明で確認してください。<a href="sources.html#src-dic">預金保険機構</a></p>
+      <p>実質金利は、(1＋名目金利)÷(1＋インフレ率)−1 です。差が小さいときは、名目金利からインフレ率を引いても、だいたい同じになります。</p>
+      <p>シミュレーターは毎月末に積み立てる計算です。月利は (1＋年利) の12乗根から1を引いた値で、年利0%のときは積立額×月数です。</p>
+      <p>預金保険の対象は、日本国内に本店のある銀行、信用金庫、信用組合、労働金庫などです。合併などのあと1年間は、関係した金融機関数に応じて、保護額が広がる特例があります。農林中央金庫、農業協同組合、漁業協同組合などは、別の貯金保険制度です。<a href="sources.html#src-dic">預金保険機構</a></p>
     </div>
   </details>
   <h2>この章の出典</h2>
