@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="日本の投資初心者向けに、お金の基本からNISA・インデックス投資・個別株の仕組みを、一次情報に基づいて解説する教育ページです。投資勧誘ではありません。">
+<meta name="color-scheme" content="light dark">
+<title>第1章 お金の基本｜お金と投資の基本</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<div class="progress" id="progress" role="progressbar" aria-label="読んだ割合" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<div class="topbar">
+  <a class="brand" href="index.html">お金と投資の基本</a>
+  <span class="spacer"></span>
+  <button type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer">目次</button>
+</div>
+<div id="drawer" class="drawer" hidden>
+  <nav aria-label="ページ">
+    <button type="button" id="closeDrawer">閉じる</button>
+    <a href="index.html">目次</a>
+    <a href="money.html" aria-current="page">第1章 お金の基本</a>
+    <a href="invest.html">第2章 投資とは何か</a>
+    <a href="products.html">第3章 主な金融商品</a>
+    <a href="funds.html">第4章 投資信託とインデックス</a>
+    <a href="stocks.html">第5章 個別株の基礎</a>
+    <a href="tax.html">第6章 制度と税金</a>
+    <a href="start.html">第7章 始め方と失敗パターン</a>
+    <a href="glossary.html">用語集</a>
+    <a href="sources.html">出典・更新履歴・免責</a>
+  </nav>
+</div>
+<div class="wrap">
+<p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+<main id="main">
+<section id="ch1" aria-labelledby="ch1-title">
+  <h1 id="ch1-title">第1章　お金の基本</h1>
+  <p class="confirm">最終確認日：2026年11月15日。物価と制度は更新されます。最新は総務省統計局、預金保険機構、国税庁で確認してください。</p>
+  <h2>結論</h2>
+  <p>手元に残るお金は、入ってきたお金から出ていったお金を引いた差額です。預金は名義どおりの円を守る仕組みですが、物価が上がると同じ円で買える量は減ります。利息のつく預金の保護は、1金融機関ごとに元本1,000万円までと破綻日までの利息等が原則です。</p>
+
+  <h2>なぜそうなるか</h2>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>ある期間の家計を、税や社会保険料を払ったあとの手取りで見ると、次の関係が定義そのものです。</p>
+    <p class="formula">その期間の貯蓄 ＝ 手取り収入 − 消費などの支出</p>
+    <p>収入より支出が多ければ貯蓄は減り、過去の貯蓄や借入で埋めます。これは性格の話ではなく、足し算の制約です。</p>
+  </div>
+  <figure class="figure"><svg viewBox="0 0 360 310" aria-hidden="true">
+  <rect x="24" y="24" width="312" height="150" rx="18" fill="var(--view-bg)" stroke="var(--view)" stroke-width="2"/>
+  <text x="180" y="58" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">生活費</text>
+  <rect x="48" y="78" width="264" height="28" rx="8" fill="var(--c2)"/>
+  <rect x="48" y="114" width="264" height="36" rx="8" fill="var(--mech)"/>
+  <text x="180" y="138" text-anchor="middle" font-size="16" fill="var(--surface)">その下に現金のクッション</text>
+  <text x="180" y="214" text-anchor="middle" font-size="18" fill="var(--text)">収入が止まっても</text>
+  <text x="180" y="242" text-anchor="middle" font-size="18" fill="var(--text)">すぐ投資を売らなくて済む</text>
+  <text x="180" y="278" text-anchor="middle" font-size="16" fill="var(--muted)">月数の正解は、このページでは書きません</text>
+  </svg><figcaption>生活防衛資金は、投資に回す前に分けておく現金という考え方です。何か月分かは法令で決まっていません。</figcaption></figure>
+<div class="card view">
+    <p><span class="badge view">考え方</span>生活費の何か月分かを、投資に回す前の現金として分けておく考え方を、生活防衛資金と呼ぶことがあります。何か月分かを定めた法令は、今回確認した金融庁・日本銀行の資料には見当たりませんでした。<span class="badge warn">要確認</span>月数は家計の収入の安定や、公的保険でカバーされる範囲によって違ってよい、という整理が一般的です。このページは月数を推奨しません。</p>
+  </div>
+
+  <h2>仕組み</h2>
+  <p>お金の役割を、流れで見ます。</p>
+  <figure class="figure"><svg viewBox="0 0 360 400" aria-hidden="true">
+  <rect x="70" y="16" width="220" height="70" rx="16" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/>
+  <text x="180" y="46" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">手取り収入</text>
+  <text x="180" y="72" text-anchor="middle" font-size="16" fill="var(--muted)">入ってきた円</text>
+  <path d="M180 86 V116" stroke="var(--text)" stroke-width="2" fill="none"/><path d="M173 112 L180 124 L187 112" fill="var(--text)"/>
+  <rect x="16" y="128" width="156" height="84" rx="16" fill="var(--view-bg)" stroke="var(--view)" stroke-width="2"/>
+  <text x="94" y="162" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">支出</text>
+  <text x="94" y="188" text-anchor="middle" font-size="16" fill="var(--muted)">生活に使う</text>
+  <rect x="188" y="128" width="156" height="84" rx="16" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/>
+  <text x="266" y="162" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">貯蓄</text>
+  <text x="266" y="188" text-anchor="middle" font-size="16" fill="var(--muted)">残った円</text>
+  <path d="M266 212 V242" stroke="var(--text)" stroke-width="2" fill="none"/><path d="M259 238 L266 250 L273 238" fill="var(--text)"/>
+  <rect x="188" y="254" width="156" height="84" rx="16" fill="var(--surface)" stroke="var(--text)" stroke-width="2"/>
+  <text x="266" y="288" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">置き場</text>
+  <text x="266" y="314" text-anchor="middle" font-size="16" fill="var(--muted)">預金・投資など</text>
+  <text x="180" y="372" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">貯蓄 ＝ 手取り − 支出</text>
+  </svg><figcaption>入ってきたお金から、使ったお金を引いた残りが貯蓄です。貯蓄の置き場が、預金や投資です。</figcaption></figure>
+
+
+  <figure class="figure"><svg viewBox="0 0 360 380" aria-hidden="true">
+  <rect x="16" y="16" width="328" height="130" rx="16" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/>
+  <text x="180" y="48" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">物価が上がる前</text>
+  <text x="180" y="76" text-anchor="middle" font-size="18" fill="var(--text)">1,000円で 3つ</text>
+  <circle cx="110" cy="108" r="16" fill="var(--c2)"/>
+  <circle cx="180" cy="108" r="16" fill="var(--c2)"/>
+  <circle cx="250" cy="108" r="16" fill="var(--c2)"/>
+  <rect x="16" y="162" width="328" height="130" rx="16" fill="var(--warn-bg)" stroke="var(--warn)" stroke-width="2"/>
+  <text x="180" y="194" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">物価が上がったあと</text>
+  <text x="180" y="222" text-anchor="middle" font-size="18" fill="var(--text)">同じ1,000円で 1つ</text>
+  <circle cx="180" cy="258" r="16" fill="var(--c2)"/>
+  <text x="180" y="324" text-anchor="middle" font-size="16" fill="var(--text)">円の額面が同じでも</text>
+  <text x="180" y="350" text-anchor="middle" font-size="16" fill="var(--text)">買える量は減りえます</text>
+  </svg><figcaption>円の数字が同じでも、物価が上がると買える量は減ります。これを、名目と実質の違いで見ます。</figcaption></figure>
+<h3>インフレ、名目と実質</h3>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>総務省統計局の消費者物価指数（全国、2025年＝100）では、2026年9月の総合指数は102.2、前年同月比は2.1%の上昇です。公表日は2026年10月23日です。これはその月の統計であり、これからの物価を示す数字ではありません。<a href="sources.html#src-cpi">総務省統計局</a></p>
+  </div>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>名目は「円の数字」、実質は「その円で買える量」です。物価が上がることをインフレと呼びます。預金の元本が100万円のままなら名目の元本は減っていません。しかし同じ買い物かごの値段が上がっていれば、100万円の購買力は下がります。</p>
+    <p>金利も同じ分け方をします。名目金利は契約上の利率、実質金利は物価の変化を織り込んだあとです。</p>
+    <p class="formula">実質金利 ＝ (1 ＋ 名目金利) ÷ (1 ＋ インフレ率) − 1</p>
+    <p>差が小さいときの近似が「名目金利 − インフレ率」です。差が大きいと近似はずれます。計算例として、名目2.1%・インフレ2.1%なら実質はちょうど0です。預貯金のいまの金利は銀行と時期で変わるため、このページには書きません。</p>
+  </div>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>預貯金の利子は、原則として20.315%（所得税等15.315%、住民税5%）が源泉徴収され、源泉分離課税です。確定申告で精算する対象ではありません。<a href="sources.html#src-nta-kurashi">国税庁「株式・配当・利子と税」</a></p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 360" aria-hidden="true">
+  <rect x="16" y="36" width="156" height="150" rx="16" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/>
+  <text x="94" y="70" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">A銀行</text>
+  <text x="94" y="102" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">1,000万円</text>
+  <text x="94" y="130" text-anchor="middle" font-size="16" fill="var(--text)">＋その利息</text>
+  <text x="94" y="160" text-anchor="middle" font-size="15" fill="var(--muted)">口座は合算</text>
+  <rect x="188" y="36" width="156" height="150" rx="16" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/>
+  <text x="266" y="70" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">B銀行</text>
+  <text x="266" y="102" text-anchor="middle" font-size="16" fill="var(--text)">また</text>
+  <text x="266" y="130" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">1,000万円</text>
+  <text x="266" y="160" text-anchor="middle" font-size="16" fill="var(--text)">＋その利息</text>
+  <text x="180" y="230" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">決済用預金は、別枠で全額</text>
+  <text x="180" y="260" text-anchor="middle" font-size="16" fill="var(--muted)">無利息・いつでも払い戻せる等</text>
+  <text x="180" y="300" text-anchor="middle" font-size="16" fill="var(--text)">1,000万円を超える分は</text>
+  <text x="180" y="326" text-anchor="middle" font-size="16" fill="var(--text)">全額戻るとは限りません</text>
+  </svg><figcaption>利息のつく預金は、銀行ごとに元本1,000万円までと破綻日までの利息等が保護されます。銀行が違えば、別々に数えます。</figcaption></figure>
+<h3>預金保険</h3>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>預金保険の対象は、日本国内に本店のある銀行、信用金庫、信用組合、労働金庫などです。対象金融機関の海外支店、外国銀行の在日支店は対象外です。外貨預金と譲渡性預金は保護対象外です。<a href="sources.html#src-dic">預金保険機構</a></p>
+    <p>決済用預金（①決済に使える、②預金者が払い戻しをいつでも請求できる、③利息がつかない、の三要件）は全額保護です。利息のつく普通預金・定期預金などは、1金融機関ごとに合算して、預金者1人あたり元本1,000万円までと破綻日までの利息等が保護されます。1,000万円を超える部分は、破綻した金融機関の財産の状況に応じて支払われ、一部カットされる場合があります。同一の金融機関にある複数口座は名寄せして合算します。合併などのあと1年間は、保護額が関係した金融機関数に応じて広がる特例があります。</p>
+    <p>証券会社は預金保険ではなく投資者保護基金、保険会社は契約者保護機構です。補償額はこのページでは確認していないので書きません。<span class="badge warn">要確認</span></p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 350" aria-hidden="true">
+  <text x="180" y="32" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">複利の計算例（年10%）</text>
+  <rect x="40" y="56" width="70" height="70" rx="10" fill="var(--c3)"/>
+  <text x="75" y="88" text-anchor="middle" font-size="18" fill="var(--surface)" font-weight="700">100</text>
+  <text x="75" y="112" text-anchor="middle" font-size="16" fill="var(--surface)">出発</text>
+  <rect x="145" y="48" width="78" height="86" rx="10" fill="var(--c1)"/>
+  <text x="184" y="88" text-anchor="middle" font-size="18" fill="#fffdf8" font-weight="700">110</text>
+  <text x="184" y="112" text-anchor="middle" font-size="16" fill="#fffdf8">1年後</text>
+  <rect x="250" y="28" width="78" height="116" rx="10" fill="var(--mech)"/>
+  <text x="289" y="84" text-anchor="middle" font-size="20" fill="#fffdf8" font-weight="700">121</text>
+  <text x="289" y="110" text-anchor="middle" font-size="16" fill="#fffdf8">2年後</text>
+  <text x="180" y="180" text-anchor="middle" font-size="18" fill="var(--text)">単利なら2年後は120</text>
+  <text x="180" y="210" text-anchor="middle" font-size="18" fill="var(--text)">差の1が、利子に付いた利子</text>
+  <rect x="24" y="236" width="312" height="88" rx="14" fill="var(--view-bg)" stroke="var(--view)"/>
+  <text x="180" y="270" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">72の法則は暗算の近似</text>
+  <text x="180" y="298" text-anchor="middle" font-size="16" fill="var(--text)">6%なら 72÷6＝12年で約2倍</text>
+  </svg><figcaption>計算例です。元本100、年10%なら1年後110、2年後121。2年目に増えた11のうち1は、前年の利子に付いた分です。将来の利率ではありません。</figcaption></figure>
+<h3>複利と72の法則</h3>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>複利は、利子にも次の利子が付く計算です。元本100、年利10%なら1年後は110、2年後は121です。2年目に増えた11のうち1は、前年の利子10に付いた分です。</p>
+    <p>お金が2倍になる年数 n は、年利を小数の r として次の式です。</p>
+    <p class="formula">n ＝ ln(2) ÷ ln(1 ＋ r)</p>
+    <p>r が小さいとき ln(1＋r) ≒ r なので、n ≒ 0.693 ÷ r です。r を百分率の数字（6%なら6）で割る形にすると約69.3になります。72は、この近似を割りやすい整数にしたものです。6%なら72÷6＝12年、正確には約11.9年です。利率が高くなるほど、72は「きりのよい近似」であり、等式そのものではありません。</p>
+  </div>
+
+  <h2>数字で見る</h2>
+  <div class="table-wrap">
+    <table>
+      <caption>第1章で確認した数字（2026年11月15日確認）</caption>
+      <thead><tr><th>項目</th><th>内容</th><th>出典</th></tr></thead>
+      <tbody>
+        <tr><td>消費者物価・総合</td><td>2026年9月、前年同月比＋2.1%（2025年＝100で102.2）。2026年10月23日公表</td><td><a href="sources.html#src-cpi">総務省統計局</a></td></tr>
+        <tr><td>利息のつく預金の保護</td><td>1金融機関ごと、元本1,000万円までと破綻日までの利息等</td><td><a href="sources.html#src-dic">預金保険機構</a></td></tr>
+        <tr><td>決済用預金</td><td>全額保護（無利息など三要件）</td><td><a href="sources.html#src-dic">預金保険機構</a></td></tr>
+        <tr><td>預貯金の利子の税</td><td>源泉分離で20.315%</td><td><a href="sources.html#src-nta-kurashi">国税庁</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>よくある誤解</h2>
+  <ul>
+    <li>「預金は絶対に減らない」は、円の額と購買力を混ぜています。円の元本が守られても、物価が上がれば買える量は減ります。破綻時に1,000万円を超える一般預金は、全額が戻るとは限りません。</li>
+    <li>「72の法則は法律や市場の規則」ではありません。対数の近似です。</li>
+  </ul>
+
+  <h2>複利シミュレーター</h2>
+  <div class="card">
+    <p><span class="badge view">考え方</span>ここからの曲線は、入力した年利が毎年続いたときの計算です。達成できる利回りを示すものではなく、将来を保証しません。税金・手数料・インフレは入っていません。</p>
+    <label class="field">毎月の積立額（円）<input id="c-pmt" type="number" inputmode="decimal" min="0" max="10000000" value="30000"></label>
+    <label class="field">想定年利（%）<input id="c-rate" type="number" inputmode="decimal" min="-50" max="50" step="0.1" value="3"></label>
+    <label class="field">年数<input id="c-years" type="number" inputmode="numeric" min="1" max="50" value="20"></label>
+    <button type="button" class="primary" id="c-run">計算する</button>
+    <div class="legend" aria-hidden="true"><span><i class="swatch" style="background:var(--c3)"></i>元本</span><span><i class="swatch" style="background:var(--c1)"></i>運用益（仮定）</span></div>
+    <div class="canvas-box"><canvas id="c-chart" data-h="240" role="img" aria-describedby="c-out"></canvas></div>
+    <p id="c-out" class="result" aria-live="polite"></p>
+    <p class="formula">月末積立。月利＝(1＋年利)^(1/12)−1。終価＝積立額×((1＋月利)^月数−1)÷月利。年利0%のときは積立額×月数。</p>
+  </div>
+
+  <h2>理解チェック</h2>
+  <form class="quiz card" data-explain="利息のつく普通預金などは、1金融機関ごとに元本1,000万円までと破綻日までの利息等が保護されます。決済用預金は別枠で全額です。">
+    <fieldset>
+      <legend>問1　利息のつく普通預金の預金保険は、原則どうなっていますか。</legend>
+      <label><input type="radio" name="q11" value="a">すべての預金が、金額に関係なく全額保護される</label>
+      <label><input type="radio" name="q11" value="b">1金融機関ごとに、元本1,000万円までと破綻日までの利息等</label>
+      <label><input type="radio" name="q11" value="c">日本中の銀行を合計して、元本1,000万円まで</label>
+    </fieldset>
+    <button type="submit">答えを見る</button>
+    <p class="quiz-result" aria-live="polite"></p>
+  </form>
+  <form class="quiz card" data-explain="(1.021÷1.021)−1＝0です。名目の残高が増えても、物価が同じ割合で上がっていれば購買力はほぼ変わりません。近似の「2.1−2.1」でも0です。">
+    <fieldset>
+      <legend>問2　名目で2.1%増え、物価も2.1%上がったとき、実質の増加はおよそどれですか。</legend>
+      <label><input type="radio" name="q12" value="a">2.1%増える</label>
+      <label><input type="radio" name="q12" value="b">およそ0</label>
+      <label><input type="radio" name="q12" value="c">4.2%増える</label>
+    </fieldset>
+    <button type="submit">答えを見る</button>
+    <p class="quiz-result" aria-live="polite"></p>
+  </form>
+
+  <details>
+    <summary>もう少し詳しく</summary>
+    <div class="inner">
+      <p>72が69.3より少し大きいのは、ln(1＋r)＝r − r²/2 ＋ … と、r より少し小さいためです。分母を実際より大きく見積もる72は、数%前後で年数をやや多めに出し、暗算に向きます。正確に知りたいときは対数の式を使ってください。</p>
+      <p>預金保険の1,000万円は「口座ごと」ではありません。同じ金融機関の対象預金を一人分として合算します。銀行が違えば別枠です。対象は、銀行法上の銀行、信用金庫、信用組合、労働金庫などです。農林中央金庫、農業協同組合、漁業協同組合などは、別の貯金保険制度です。個別の金融機関が対象かは、預金保険機構の説明で確認してください。<a href="sources.html#src-dic">預金保険機構</a></p>
+    </div>
+  </details>
+  <h2>この章の出典</h2>
+  <ul class="chapter-src">
+    <li><a href="sources.html#src-cpi">総務省統計局 消費者物価指数（2026年9月分、2026年10月23日公表）</a></li>
+    <li><a href="sources.html#src-dic">預金保険機構「預金保険制度の概要」</a></li>
+    <li><a href="sources.html#src-nta-kurashi">国税庁「株式・配当・利子と税」</a></li>
+  </ul>
+</section>
+<nav class="pager" aria-label="章の移動"><a href="index.html">目次へ</a><a href="index.html">目次</a><a class="primary" href="invest.html">次へ<br>投資とは</a></nav>
+</main>
+<footer>
+  <p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+  <p>お金と投資の基本　最終確認日 2026年11月15日。最新は各公式サイトで確認してください。</p>
+</footer>
+</div>
+<button type="button" id="toTop">上へ</button>
+<script src="app.js"></script>
+</body>
+</html>

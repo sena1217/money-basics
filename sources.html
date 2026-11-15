@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="日本の投資初心者向けに、お金の基本からNISA・インデックス投資・個別株の仕組みを、一次情報に基づいて解説する教育ページです。投資勧誘ではありません。">
+<meta name="color-scheme" content="light dark">
+<title>出典・免責｜お金と投資の基本</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<div class="progress" id="progress" role="progressbar" aria-label="読んだ割合" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<div class="topbar">
+  <a class="brand" href="index.html">お金と投資の基本</a>
+  <span class="spacer"></span>
+  <button type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer">目次</button>
+</div>
+<div id="drawer" class="drawer" hidden>
+  <nav aria-label="ページ">
+    <button type="button" id="closeDrawer">閉じる</button>
+    <a href="index.html">目次</a>
+    <a href="money.html">第1章 お金の基本</a>
+    <a href="invest.html">第2章 投資とは何か</a>
+    <a href="products.html">第3章 主な金融商品</a>
+    <a href="funds.html">第4章 投資信託とインデックス</a>
+    <a href="stocks.html">第5章 個別株の基礎</a>
+    <a href="tax.html">第6章 制度と税金</a>
+    <a href="start.html">第7章 始め方と失敗パターン</a>
+    <a href="glossary.html">用語集</a>
+    <a href="sources.html" aria-current="page">出典・更新履歴・免責</a>
+  </nav>
+</div>
+<div class="wrap">
+<p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+<main id="main">
+<section id="sources" aria-labelledby="sources-title">
+  <h1 id="sources-title">出典一覧</h1>
+  <p>確認日はすべて2026年11月15日です。リンク先の改訂日が別に書かれている資料は、その改訂日も本文に書きました。ページが更新されているときは、公式サイトの記述が優先します。</p>
+  <ol class="sources">
+    <li id="src-cpi">総務省統計局「2025年基準 消費者物価指数 全国 2026年9月分」（2026年10月23日公表）<br><a href="https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html">https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html</a></li>
+    <li id="src-dic">預金保険機構「預金保険制度の概要」<br><a href="https://www.dic.go.jp/yokinsha/gaiyo.html">https://www.dic.go.jp/yokinsha/gaiyo.html</a></li>
+    <li id="src-nta-kurashi">国税庁「株式・配当・利子と税」<br><a href="https://www.nta.go.jp/publication/pamph/koho/kurashi/html/04_5.htm">https://www.nta.go.jp/publication/pamph/koho/kurashi/html/04_5.htm</a></li>
+    <li id="src-nta-1463">国税庁 No.1463「株式等を譲渡したときの課税（申告分離課税）」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm</a></li>
+    <li id="src-nta-1474">国税庁 No.1474「上場株式等に係る譲渡損失の損益通算及び繰越控除」（令和8年4月1日現在法令等）<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1474.htm">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1474.htm</a></li>
+    <li id="src-nta-1535">国税庁 No.1535「NISA制度」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1535.htm">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1535.htm</a></li>
+    <li id="src-nta-1240">国税庁 No.1240「居住者に係る外国税額控除」（令和8年4月1日現在法令等）<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1240.htm">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1240.htm</a></li>
+    <li id="src-nta-2260">国税庁 No.2260「所得税の税率」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm</a></li>
+    <li id="src-nta-defense">国税庁「防衛特別所得税及び復興特別所得税（源泉徴収関係）Q&amp;A」<br><a href="https://www.nta.go.jp/publication/pamph/pdf/0026005-024_03.pdf">https://www.nta.go.jp/publication/pamph/pdf/0026005-024_03.pdf</a></li>
+    <li id="src-fsa-nisa">金融庁「NISAを知る」<br><a href="https://www.fsa.go.jp/policy/nisa2/know/">https://www.fsa.go.jp/policy/nisa2/know/</a></li>
+    <li id="src-fsa-faq">金融庁「NISA よくある質問」<br><a href="https://www.fsa.go.jp/policy/nisa2/question/">https://www.fsa.go.jp/policy/nisa2/question/</a></li>
+    <li id="src-fsa-slide">金融庁「NISAを利用する皆さまへ」（令和6年6月、令和7年9月改訂）<br><a href="https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf">https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf</a></li>
+    <li id="src-fsa-r8tax">金融庁「令和8（2026）年度税制改正について」（2025年12月）<br><a href="https://www.fsa.go.jp/news/r7/sonota/20251226-2/01.pdf">https://www.fsa.go.jp/news/r7/sonota/20251226-2/01.pdf</a></li>
+    <li id="src-fsa-r9req">金融庁「令和9（2027）年度 税制改正要望」（2026年8月）<br><a href="https://www.fsa.go.jp/news/r8/sonota/fsa_trps_r9.pdf">https://www.fsa.go.jp/news/r8/sonota/fsa_trps_r9.pdf</a></li>
+    <li id="src-fsa-risk">金融庁「無登録業者との取引は要注意」<br><a href="https://www.fsa.go.jp/ordinary/chuui/highrisk.html">https://www.fsa.go.jp/ordinary/chuui/highrisk.html</a></li>
+    <li id="src-fsa-attention">金融庁「詐欺的な投資勧誘等にご注意ください」<br><a href="https://www.fsa.go.jp/ordinary/chuui/attention.html">https://www.fsa.go.jp/ordinary/chuui/attention.html</a></li>
+    <li id="src-fsa-kaigai">金融庁「無登録の海外所在業者による勧誘にご注意ください」<br><a href="https://www.fsa.go.jp/ordinary/kanyu/20090731.html">https://www.fsa.go.jp/ordinary/kanyu/20090731.html</a></li>
+    <li id="src-jpx-unit">日本取引所グループ「売買単位」<br><a href="https://www.jpx.co.jp/equities/trading/domestic/03.html">https://www.jpx.co.jp/equities/trading/domestic/03.html</a></li>
+    <li id="src-jpx-unit-g">日本取引所グループ 用語集「売買単位」<br><a href="https://www.jpx.co.jp/glossary/ha/361.html">https://www.jpx.co.jp/glossary/ha/361.html</a></li>
+    <li id="src-jpx-odd">日本取引所グループ 用語集「単元未満株式」<br><a href="https://www.jpx.co.jp/glossary/ta/288.html">https://www.jpx.co.jp/glossary/ta/288.html</a></li>
+    <li id="src-jpx-mini">日本取引所グループ 用語集「株式ミニ投資制度」<br><a href="https://www.jpx.co.jp/glossary/ka/84.html">https://www.jpx.co.jp/glossary/ka/84.html</a></li>
+    <li id="src-per">日本取引所グループ 用語集「株価収益率」<br><a href="https://www.jpx.co.jp/glossary/ka/73.html">https://www.jpx.co.jp/glossary/ka/73.html</a></li>
+    <li id="src-pbr">日本取引所グループ 用語集「株価純資産倍率」<br><a href="https://www.jpx.co.jp/glossary/ka/74.html">https://www.jpx.co.jp/glossary/ka/74.html</a></li>
+    <li id="src-roe">日本取引所グループ 用語集「自己資本当期純利益率」<br><a href="https://www.jpx.co.jp/glossary/sa/549.html">https://www.jpx.co.jp/glossary/sa/549.html</a></li>
+    <li id="src-topix">日本取引所グループ「TOPIXとは」<br><a href="https://www.jpx.co.jp/markets/indices/topix/">https://www.jpx.co.jp/markets/indices/topix/</a></li>
+    <li id="src-topix-method">JPX総研「東証指数算出要領（TOPIX編）」<br><a href="https://www.jpx.co.jp/markets/indices/line-up/files/cal2_30_topix.pdf">https://www.jpx.co.jp/markets/indices/line-up/files/cal2_30_topix.pdf</a></li>
+    <li id="src-jpx-calc">JPX総研「指数計算に係る算出要領」<br><a href="https://www.jpx.co.jp/markets/indices/line-up/files/cal2_36_indexcalculate.pdf">https://www.jpx.co.jp/markets/indices/line-up/files/cal2_36_indexcalculate.pdf</a></li>
+    <li id="src-jpx-etf">日本取引所グループ「ETF」<br><a href="https://www.jpx.co.jp/equities/products/etfs/index.html">https://www.jpx.co.jp/equities/products/etfs/index.html</a></li>
+    <li id="src-jpx-reit">日本取引所グループ「概要（REIT）」<br><a href="https://www.jpx.co.jp/equities/products/reits/outline/">https://www.jpx.co.jp/equities/products/reits/outline/</a></li>
+    <li id="src-jpx-reit-talk">日本取引所グループ 講演記録「J-REITの基本と魅力」（2023年9月）<br><a href="https://www.jpx.co.jp/reit-if/event/20230930.html">https://www.jpx.co.jp/reit-if/event/20230930.html</a></li>
+    <li id="src-nikkei">日本経済新聞社「日経平均株価 算出要領」<br><a href="https://indexes.nikkei.co.jp/nkave/archives/file/nikkei_stock_average_guidebook_jp.pdf">https://indexes.nikkei.co.jp/nkave/archives/file/nikkei_stock_average_guidebook_jp.pdf</a></li>
+    <li id="src-sp500">S&amp;P Dow Jones Indices, S&amp;P 500 Factsheet, as of October 30, 2026（価格リターン、米ドル）<br><a href="https://www.spglobal.com/spdji/en/indices/equity/sp-500/">https://www.spglobal.com/spdji/en/indices/equity/sp-500/</a></li>
+    <li id="src-acwi">MSCI「MSCI ACWI Index」ファクトシート（2026年10月30日）<br><a href="https://www.msci.com/documents/10199/255599/msci-acwi.pdf">https://www.msci.com/documents/10199/255599/msci-acwi.pdf</a></li>
+    <li id="src-treaty">財務省「日米租税条約のポイント」<br><a href="https://www.mof.go.jp/tax_policy/summary/international/tax_convention/press_release/sy151107_index.htm">https://www.mof.go.jp/tax_policy/summary/international/tax_convention/press_release/sy151107_index.htm</a></li>
+    <li id="src-toushin-nav">投資信託協会 基準価額の説明<br><a href="https://www.toushin.or.jp/mailmag/backnumber/pages/detail/266">https://www.toushin.or.jp/mailmag/backnumber/pages/detail/266</a></li>
+    <li id="src-toushin-faq">投資信託協会「信託報酬は誰に支払われているのですか」<br><a href="https://www.toushin.or.jp/static/faq/index.html">https://www.toushin.or.jp/static/faq/index.html</a></li>
+    <li id="src-toushin-cost">投資信託協会 販売時のコストの説明<br><a href="https://www.toushin.or.jp/mailmag/backnumber/pages/detail/93">https://www.toushin.or.jp/mailmag/backnumber/pages/detail/93</a></li>
+    <li id="src-toushin-reserve">投資信託協会 信託財産留保額の説明<br><a href="https://www.toushin.or.jp/mailmag/backnumber/pages/detail/35">https://www.toushin.or.jp/mailmag/backnumber/pages/detail/35</a></li>
+    <li id="src-toushin-guide">投資信託協会「投資信託ガイド」（2020年版）。分別管理と分配金の説明に使用。税率の記述は古い箇所があるため、税は国税庁を優先<br><a href="https://www.toushin.or.jp/fileadmin/open/kouhou/file/guidebook/%E3%80%90%E8%A6%8B%E6%9C%AC%E3%80%91%E6%8A%95%E8%B3%87%E4%BF%A1%E8%A8%97%E3%82%AC%E3%82%A4%E3%83%892020%E5%B9%B4%E7%89%88.pdf">投資信託ガイド2020（PDF）</a></li>
+    <li id="src-ideco-entry">国民年金基金連合会「iDeCo加入手続きについて」<br><a href="https://www.ideco-koushiki.jp/start/entry.html">https://www.ideco-koushiki.jp/start/entry.html</a></li>
+    <li id="src-ideco-structure">国民年金基金連合会「加入資格・掛金・受取方法」<br><a href="https://www.ideco-koushiki.jp/guide/structure.html">https://www.ideco-koushiki.jp/guide/structure.html</a></li>
+    <li id="src-ideco-good">国民年金基金連合会「iDeCoのメリット」<br><a href="https://www.ideco-koushiki.jp/guide/good.html">https://www.ideco-koushiki.jp/guide/good.html</a></li>
+    <li id="src-ideco-reform">国民年金基金連合会「制度改正について」<br><a href="https://www.ideco-koushiki.jp/library/2022kaisei/">https://www.ideco-koushiki.jp/library/2022kaisei/</a></li>
+    <li id="src-ideco-news">国民年金基金連合会 手続関連のお知らせ（2026年12月分からの限度額）<br><a href="https://www.ideco-koushiki.jp/news/procedure/">https://www.ideco-koushiki.jp/news/procedure/</a></li>
+    <li id="src-mhlw-ideco">厚生労働省「iDeCoの拠出限度額と加入可能年齢が引き上げられます」<br><a href="https://www.mhlw.go.jp/content/12500000/001726959.pdf">https://www.mhlw.go.jp/content/12500000/001726959.pdf</a></li>
+    <li id="src-gov-ideco">政府広報オンライン「iDeCoが大きく変わる！ 2026年12月制度改正」<br><a href="https://www.gov-online.go.jp/article/202412/entry-6825.html">https://www.gov-online.go.jp/article/202412/entry-6825.html</a></li>
+  </ol>
+</section>
+<section id="history">
+  <h2>更新履歴</h2>
+  <ul>
+    <li>2026年11月15日　初版。上記の一次情報をこの日に確認して作成。</li>
+    <li>2026年11月15日　章ごとにページを分け、仕組みの模式図を追加。数値の確認日は初版と同じ。</li>
+  </ul>
+</section>
+<section id="legal">
+  <h2>免責</h2>
+  <p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+  <p>このページは、特定の有価証券、投資信託、運営管理機関、証券会社の勧誘、または売買のタイミングの助言を目的としません。過去の指数の成績や、シミュレーターの仮定の利回りは、将来の結果を示すものではありません。税制・NISA・iDeCo・預金保険・指数のルールは改正されます。実行する前に、最新の公式資料と、必要なら税務署や専門家に確認してください。</p>
+  <p>シミュレーターは教育用の計算です。端数の扱い、信託報酬の日次控除、税金、為替、分配金の再投資の有無は、実際の商品と一致しないことがあります。</p>
+</section>
+<nav class="pager" aria-label="章の移動"><a href="glossary.html">前へ<br>用語集</a><a href="index.html">目次</a><a href="glossary.html">用語集へ</a></nav>
+</main>
+<footer>
+  <p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+  <p>お金と投資の基本　最終確認日 2026年11月15日。最新は各公式サイトで確認してください。</p>
+</footer>
+</div>
+<button type="button" id="toTop">上へ</button>
+<script src="app.js"></script>
+</body>
+</html>

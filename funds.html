@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="日本の投資初心者向けに、お金の基本からNISA・インデックス投資・個別株の仕組みを、一次情報に基づいて解説する教育ページです。投資勧誘ではありません。">
+<meta name="color-scheme" content="light dark">
+<title>第4章 投資信託とインデックス｜お金と投資の基本</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<div class="progress" id="progress" role="progressbar" aria-label="読んだ割合" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<div class="topbar">
+  <a class="brand" href="index.html">お金と投資の基本</a>
+  <span class="spacer"></span>
+  <button type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer">目次</button>
+</div>
+<div id="drawer" class="drawer" hidden>
+  <nav aria-label="ページ">
+    <button type="button" id="closeDrawer">閉じる</button>
+    <a href="index.html">目次</a>
+    <a href="money.html">第1章 お金の基本</a>
+    <a href="invest.html">第2章 投資とは何か</a>
+    <a href="products.html">第3章 主な金融商品</a>
+    <a href="funds.html" aria-current="page">第4章 投資信託とインデックス</a>
+    <a href="stocks.html">第5章 個別株の基礎</a>
+    <a href="tax.html">第6章 制度と税金</a>
+    <a href="start.html">第7章 始め方と失敗パターン</a>
+    <a href="glossary.html">用語集</a>
+    <a href="sources.html">出典・更新履歴・免責</a>
+  </nav>
+</div>
+<div class="wrap">
+<p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+<main id="main">
+<section id="ch4" aria-labelledby="ch4-title">
+  <h1 id="ch4-title">第4章　投資信託とインデックス投資</h1>
+  <p class="confirm">最終確認日：2026年11月15日。指数の構成比率はファクトシートの日付時点のものです。最新は各指数の提供者で確認してください。</p>
+  <h2>結論</h2>
+  <p>インデックス運用は、決まった指数の値動きに沿うことを目指します。アクティブ運用は、指数を上回ることなどを目指します。どちらも、費用を引いたあとの結果が投資家の手元に残ります。日経平均は株価平均、TOPIXは浮動株時価総額の加重、という作りの違いがあります。</p>
+
+  <figure class="figure"><svg viewBox="0 0 360 320" aria-hidden="true">
+  <text x="180" y="32" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">指数という定規</text>
+  <line x1="40" y1="90" x2="320" y2="90" stroke="var(--text)" stroke-width="4"/>
+  <circle cx="80" cy="90" r="10" fill="var(--c1)"/>
+  <circle cx="150" cy="90" r="10" fill="var(--c1)"/>
+  <circle cx="230" cy="90" r="10" fill="var(--c1)"/>
+  <text x="180" y="124" text-anchor="middle" font-size="18" fill="var(--text)">沿う：インデックス</text>
+  <line x1="40" y1="190" x2="320" y2="190" stroke="var(--muted)" stroke-width="4"/>
+  <circle cx="90" cy="160" r="10" fill="var(--c2)"/>
+  <circle cx="170" cy="214" r="10" fill="var(--c2)"/>
+  <circle cx="260" cy="168" r="10" fill="var(--c2)"/>
+  <text x="180" y="252" text-anchor="middle" font-size="18" fill="var(--text)">外す：アクティブ</text>
+  <text x="180" y="290" text-anchor="middle" font-size="16" fill="var(--text)">費用を引いたあとが、手元に残ります</text>
+  </svg><figcaption>インデックスは決まった定規に沿うこと、アクティブは定規から外して差を狙うことです。差はプラスにもマイナスにもなります。</figcaption></figure>
+<h2>なぜそうなるか</h2>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>指数は、多くの銘柄を一つの数字にまとめる定規です。定規の作りが違うと、同じ市場でも数字の動きが違います。投資信託がその定規に沿うなら、投資家が受け取るのは「定規の動きから費用を引いたもの」に近くなります。アクティブは、銘柄や割合を定規から外して差を狙います。差はプラスにもマイナスにもなります。費用が高いほど、同じ中身の値動きから差し引かれる額は大きくなります。</p>
+  </div>
+
+  <h2>仕組み</h2>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>言葉の定義は次のとおりです。</p>
+    <ul>
+      <li>基準価額 ＝ 純資産総額 ÷ 受益権総口数。<a href="sources.html#src-toushin-nav">投資信託協会</a></li>
+      <li>純資産総額は、資産を時価評価し、費用などを引いた残りです。</li>
+      <li>信託報酬は、運用期間中に信託財産から引かれ、運用会社・販売会社・信託銀行に支払われます。<a href="sources.html#src-toushin-faq">投資信託協会 FAQ</a></li>
+      <li>販売手数料は購入時などに販売会社へ払う費用で、同じファンドでも販売会社で料率が違うことがあります。かからないものもあります。<a href="sources.html#src-toushin-cost">投資信託協会（販売時のコスト）</a></li>
+      <li>信託財産留保額は、販売会社の収入ではなく信託財産に残すお金です。ないファンドもあります。<a href="sources.html#src-toushin-reserve">投資信託協会</a></li>
+    </ul>
+  </div>
+
+  <h3>四つの指数の作り</h3>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>日経平均株価は、東証プライム市場の225銘柄の株価を、株価換算係数で調整して合計し、除数で割る価格平均指数です。日本経済新聞社が算出しています。除数は、銘柄入れ替えや株式分割などで、相場以外の理由で数字が飛ばないように修正します。<a href="sources.html#src-nikkei">日経平均株価 算出要領</a></p>
+    <p class="formula">日経平均 ＝（株価 × 株価換算係数）の合計 ÷ 除数</p>
+  </div>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>TOPIXは浮動株時価総額加重です。基準日は1968年1月4日、基準値は100ポイントです。対象は東証プライム、スタンダード、グロースの内国普通株式から、流動性などの基準で選ばれます。算出上のウエイト上限は10%です。<a href="sources.html#src-topix">JPX「TOPIXとは」</a> <a href="sources.html#src-topix-method">TOPIX算出要領</a> <a href="sources.html#src-jpx-calc">指数計算に係る算出要領</a></p>
+    <p class="formula">指数 ＝ 指数用時価総額 ÷ 基準時価総額 × 基準値</p>
+    <p>指数用株式数は、指数用上場株式数 × 浮動株比率 × キャップ調整係数、です。浮動株は、市場で売買されやすい株の割合を見るための比率です。構成銘柄数は固定ではないため、このページには写しません。最新の本数はJPXのファクトシートで確認してください。</p>
+  </div>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>S&amp;P 500は、米国の大型株の尺です。S&amp;Pダウ・ジョーンズのファクトシート（2026年10月30日時点、価格リターン、米ドル）では、浮動株調整後の時価総額加重、構成銘柄数503（複数の株式種類を含む数え方）、利用可能な時価総額の約80%をカバー、上位10銘柄のウエイト合計37.3%とあります。この比率は入れ替えと株価で変わります。<a href="sources.html#src-sp500">S&amp;P 500 ファクトシート（2026年10月30日）</a></p>
+    <p>同じ資料には過去の年率リターンも載っています。過去の成績は将来を保証しない、と算出者自身が述べる種類の注意が指数には付きます。このページは、そのリターンの数字を「期待してよい成績」として転記しません。</p>
+  </div>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>MSCI ACWIは、先進国23市場と新興国24市場の大型・中型株を対象にし、2026年10月30日のファクトシートでは構成銘柄2,413、投資可能な世界の株式時価総額の約85%をカバーする、とあります。同じ日付の国別ウエイトでは米国64.63%です。この割合も変動します。<a href="sources.html#src-acwi">MSCI ACWI ファクトシート（2026年10月30日）</a></p>
+  </div>
+
+  <div class="card mech">
+    <figure class="figure"><svg viewBox="0 0 360 310" aria-hidden="true">
+  <text x="90" y="36" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">A社</text>
+  <text x="270" y="36" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">B社</text>
+  <rect x="40" y="52" width="100" height="70" rx="10" fill="var(--fact-bg)" stroke="var(--fact)"/>
+  <text x="90" y="82" text-anchor="middle" font-size="15" fill="var(--text)">株価 1,000</text>
+  <text x="90" y="106" text-anchor="middle" font-size="16" fill="var(--text)">会社は小さい</text>
+  <rect x="210" y="52" width="110" height="120" rx="10" fill="var(--mech-bg)" stroke="var(--mech)"/>
+  <text x="265" y="100" text-anchor="middle" font-size="16" fill="var(--text)">株価 100</text>
+  <text x="265" y="128" text-anchor="middle" font-size="15" fill="var(--text)">会社は大きい</text>
+  <text x="180" y="210" text-anchor="middle" font-size="16" fill="var(--text)">株価の平均では A がよく動かす</text>
+  <text x="180" y="238" text-anchor="middle" font-size="16" fill="var(--text)">時価総額では B がよく動かす</text>
+  <text x="180" y="274" text-anchor="middle" font-size="15" fill="var(--text)">日経平均は株価平均、TOPIXは時価総額</text>
+  </svg><figcaption>架空の2社です。株価平均では株価が高いAの10%が大きく効き、時価総額では大きいBの10%が効きます。</figcaption></figure>
+<p><span class="badge mech">仕組み</span>株価平均では、株価の高い銘柄の1円が、指数に大きく効きます。時価総額加重では、株価×株数（さらに浮動株で調整）が大きい銘柄が効きます。計算例で、実在しない2社を比べます。</p>
+    <ul>
+      <li>A：株価1,000円、発行100万株、時価総額10億円</li>
+      <li>B：株価100円、発行1億株、時価総額100億円</li>
+    </ul>
+    <p>単純平均は (1,000＋100)÷2＝550 です。Aが10%上がると平均は600（＋50）、Bが10%上がると555（＋5）です。時価総額の割合はAが約9%、Bが約91%なので、Bの10%の方が全体を大きく動かします。日経平均は株価換算係数やキャップで極端な影響を調整しますが、基本の感度は株価平均の側です。TOPIXとS&amp;P 500とACWIは、時価総額（浮動株調整）の側です。</p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 310" aria-hidden="true">
+  <rect x="16" y="20" width="328" height="100" rx="14" fill="var(--mech-bg)" stroke="var(--mech)"/>
+  <text x="180" y="52" text-anchor="middle" font-size="16" fill="var(--text)">現地の値段は同じ</text>
+  <text x="180" y="84" text-anchor="middle" font-size="16" fill="var(--text)" font-weight="700">円安 → 円での評価は増えやすい</text>
+  <rect x="16" y="136" width="328" height="100" rx="14" fill="var(--warn-bg)" stroke="var(--warn)"/>
+  <text x="180" y="168" text-anchor="middle" font-size="16" fill="var(--text)">現地の値段は同じ</text>
+  <text x="180" y="200" text-anchor="middle" font-size="16" fill="var(--text)" font-weight="700">円高 → 円での評価は減りやすい</text>
+  <text x="180" y="272" text-anchor="middle" font-size="16" fill="var(--text)">どちらが得かは、期間によります</text>
+  </svg><figcaption>外国の資産は、現地の値段に、円とその通貨の交換レートが掛算されます。ヘッジは振れを抑える代わりに、費用がかかることがあります。</figcaption></figure>
+<h3>為替とヘッジ</h3>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>外国の資産を円で持つと、資産の現地価格の変化に、円とその通貨の交換レートの変化が掛算されます。現地価格が同じでも、円安（外貨が高くなる）なら円建ての評価は上がり、円高なら下がります。この振れを為替リスクと呼びます。</p>
+    <p>為替ヘッジは、先渡しなどの取引で、将来の交換レートをあらかじめ抑える仕組みです。振れは小さくなりやすい一方、ヘッジにはコストがかかります。金利の高い通貨をヘッジする側は、金利差に近いコストを払いやすい、というのが金利平価の理屈です。ヘッジした方が結果が良くなる、とは決まりません。ヘッジなしの方が良い期間もあります。</p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 330" aria-hidden="true">
+  <rect x="36" y="40" width="120" height="140" rx="16" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/>
+  <rect x="204" y="40" width="120" height="100" rx="16" fill="var(--warn-bg)" stroke="var(--warn)" stroke-width="2"/>
+  <text x="96" y="100" text-anchor="middle" font-size="18" fill="var(--text)">費用が</text>
+  <text x="96" y="128" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">小さい</text>
+  <text x="264" y="90" text-anchor="middle" font-size="18" fill="var(--text)">費用が</text>
+  <text x="264" y="118" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">大きい</text>
+  <path d="M264 150 v24" stroke="var(--warn)" stroke-width="3"/>
+  <circle cx="264" cy="186" r="6" fill="var(--warn)"/>
+  <text x="180" y="230" text-anchor="middle" font-size="16" fill="var(--text)">同じ中身なら、費用が小さい方が</text>
+  <text x="180" y="256" text-anchor="middle" font-size="16" fill="var(--text)">残りは大きくなりやすい</text>
+  <text x="180" y="290" text-anchor="middle" font-size="16" fill="var(--text)">中身が違う商品の優劣ではありません</text>
+  </svg><figcaption>毎年少しずつ引かれる費用は、一年だけ見ると小さくても、掛け算なので年数がたつと差が開きます。率は仮定です。</figcaption></figure>
+<h3>コストが長期に残る理由</h3>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>毎年の成長率から費用率を引いたものが続く、という近似では、n年後の倍率は (1＋リターン − 費用)^n です。費用の差は、単年では小さく見えても、掛け算なので年数とともに開きます。</p>
+    <p class="formula">倍率の比 ＝ (1 ＋ r − c₁)^n ÷ (1 ＋ r − c₂)^n</p>
+    <p>r は費用を引く前の年率、c は信託報酬などの年率、という教学用の近似です。実際の信託報酬は日々の純資産から引かれ、売買の手数料や税金は別にかかります。</p>
+  </div>
+
+  <h2>コスト比較シミュレーター</h2>
+  <div class="card">
+    <p>二つの信託報酬だけが違う、という仮定です。販売手数料、税金、信託財産留保額、実際に指数からずれる幅は入っていません。想定リターンは保証ではありません。</p>
+    <label class="field">毎月の積立額（円）<input id="k-pmt" type="number" inputmode="decimal" min="0" value="30000"></label>
+    <label class="field">費用を引く前の想定年利（%）<input id="k-rate" type="number" inputmode="decimal" step="0.1" value="5"></label>
+    <label class="field">信託報酬A（年%）<input id="k-c1" type="number" inputmode="decimal" min="0" step="0.01" value="0.1"></label>
+    <label class="field">信託報酬B（年%）<input id="k-c2" type="number" inputmode="decimal" min="0" step="0.01" value="1.0"></label>
+    <label class="field">年数<input id="k-years" type="number" inputmode="numeric" min="1" max="50" value="30"></label>
+    <button type="button" class="primary" id="k-run">比較する</button>
+    <div class="legend" aria-hidden="true"><span><i class="swatch" style="background:var(--c1)"></i>報酬Aのあと</span><span><i class="swatch" style="background:var(--c2)"></i>報酬Bのあと</span></div>
+    <div class="canvas-box"><canvas id="k-chart" data-h="240" role="img" aria-describedby="k-out"></canvas></div>
+    <p id="k-out" class="result" aria-live="polite"></p>
+  </div>
+
+  <h2>よくある誤解</h2>
+  <ul>
+    <li>「日経平均とTOPIXは同じ日本株なので同じ動き」ではありません。銘柄の範囲と、株価で加重するか時価総額で加重するかが違います。</li>
+    <li>「全世界株式＝各国が均等」ではありません。ACWIは時価総額加重なので、確認日時点のファクトシートでは米国の割合が大きいです。</li>
+    <li>「インデックスは必ずアクティブに勝つ」とは言えません。費用の差は算術として残りますが、ある期間に指数を上回るアクティブもあります。</li>
+    <li>「為替ヘッジを付ければ得」とは限りません。</li>
+  </ul>
+
+  <h2>理解チェック</h2>
+  <form class="quiz card" data-explain="日経平均は225銘柄の株価を株価換算係数と除数でまとめる価格平均です。TOPIXは浮動株時価総額加重です。">
+    <fieldset>
+      <legend>問1　日経平均株価の基本の作りはどれですか。</legend>
+      <label><input type="radio" name="q41" value="a">東証の全銘柄を時価総額で加重する</label>
+      <label><input type="radio" name="q41" value="b">プライム市場から選んだ225銘柄の株価平均</label>
+      <label><input type="radio" name="q41" value="c">米国の大型株500社</label>
+    </fieldset>
+    <button type="submit">答えを見る</button>
+    <p class="quiz-result" aria-live="polite"></p>
+  </form>
+  <form class="quiz card" data-explain="信託報酬は、保有している間、信託財産から引かれる費用です。購入時に一度だけ払う販売手数料とは別です。">
+    <fieldset>
+      <legend>問2　信託報酬はどれですか。</legend>
+      <label><input type="radio" name="q42" value="a">保有中に信託財産から引かれる運用管理費用</label>
+      <label><input type="radio" name="q42" value="b">預金保険が保護する上限</label>
+      <label><input type="radio" name="q42" value="c">株を100株単位で買う規則</label>
+    </fieldset>
+    <button type="submit">答えを見る</button>
+    <p class="quiz-result" aria-live="polite"></p>
+  </form>
+
+  <details>
+    <summary>もう少し詳しく</summary>
+    <div class="inner">
+      <p>TOPIXの算出要領では、定期入替は原則10月最終営業日、浮動株時価総額のウエイト上限は10%です。2026年10月最終営業日が初回の定期入替、と要領に書かれています。流動性の基準（売買代金回転率や浮動株時価総額の累積比率）の細目は要領に表があります。<a href="sources.html#src-topix-method">TOPIX算出要領</a></p>
+      <p>日経平均は原則225銘柄ですが、持ち株会社化などの短い期間は225に満たないことがあります。そのときは除数で連続性を保ちます。<a href="sources.html#src-nikkei">算出要領</a></p>
+      <p>S&amp;P 500の「503」は、2026年10月30日時点で複数の議決権種類などを数に含めたものです。いつも503とは限りません。<a href="sources.html#src-sp500">ファクトシート</a></p>
+    </div>
+  </details>
+  <h2>この章の出典</h2>
+  <ul class="chapter-src">
+    <li><a href="sources.html#src-nikkei">日経平均株価 算出要領</a></li>
+    <li><a href="sources.html#src-topix">JPX TOPIX</a></li>
+    <li><a href="sources.html#src-topix-method">TOPIX算出要領</a></li>
+    <li><a href="sources.html#src-jpx-calc">JPX 指数計算に係る算出要領</a></li>
+    <li><a href="sources.html#src-sp500">S&amp;P 500 ファクトシート（2026年10月30日）</a></li>
+    <li><a href="sources.html#src-acwi">MSCI ACWI ファクトシート（2026年10月30日）</a></li>
+    <li><a href="sources.html#src-toushin-nav">投資信託協会 基準価額</a>、<a href="sources.html#src-toushin-faq">信託報酬</a>、<a href="sources.html#src-toushin-reserve">信託財産留保額</a></li>
+  </ul>
+</section>
+<nav class="pager" aria-label="章の移動"><a href="products.html">前へ<br>金融商品</a><a href="index.html">目次</a><a class="primary" href="stocks.html">次へ<br>個別株</a></nav>
+</main>
+<footer>
+  <p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+  <p>お金と投資の基本　最終確認日 2026年11月15日。最新は各公式サイトで確認してください。</p>
+</footer>
+</div>
+<button type="button" id="toTop">上へ</button>
+<script src="app.js"></script>
+</body>
+</html>

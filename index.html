@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="日本の投資初心者向けに、お金の基本からNISA・インデックス投資・個別株の仕組みを、一次情報に基づいて解説する教育ページです。投資勧誘ではありません。">
+<meta name="color-scheme" content="light dark">
+<title>お金と投資の基本｜仕組みから読む入門</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<div class="progress" id="progress" role="progressbar" aria-label="読んだ割合" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<div class="topbar">
+  <a class="brand" href="index.html">お金と投資の基本</a>
+  <span class="spacer"></span>
+  <button type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer">目次</button>
+</div>
+<div id="drawer" class="drawer" hidden>
+  <nav aria-label="ページ">
+    <button type="button" id="closeDrawer">閉じる</button>
+    <a href="index.html" aria-current="page">目次</a>
+    <a href="money.html">第1章 お金の基本</a>
+    <a href="invest.html">第2章 投資とは何か</a>
+    <a href="products.html">第3章 主な金融商品</a>
+    <a href="funds.html">第4章 投資信託とインデックス</a>
+    <a href="stocks.html">第5章 個別株の基礎</a>
+    <a href="tax.html">第6章 制度と税金</a>
+    <a href="start.html">第7章 始め方と失敗パターン</a>
+    <a href="glossary.html">用語集</a>
+    <a href="sources.html">出典・更新履歴・免責</a>
+  </nav>
+</div>
+<div class="wrap">
+<p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+<main id="main">
+
+<h1>お金の基本から、投資の仕組みまで</h1>
+<p class="lead">むずかしい言葉の前に、絵で「なぜそうなるか」を見てから、数字と出典を読みます。特定の商品を買う・売る判断は書きません。</p>
+<nav class="path" aria-label="読む順番">
+  <a href="money.html">1 お金</a>
+  <a href="invest.html">2 投資</a>
+  <a href="products.html">3 商品</a>
+  <a href="funds.html">4 指数</a>
+  <a href="stocks.html">5 個別株</a>
+  <a href="tax.html">6 税金</a>
+  <a href="start.html">7 始め方</a>
+</nav>
+<div class="home-grid">
+<a class="cat" href="money.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">収入</text></svg><span><em>第1章</em><strong>お金の基本</strong><span>収入、物価、預金、複利</span></span></a>
+<a class="cat" href="invest.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">分散</text></svg><span><em>第2章</em><strong>投資とは何か</strong><span>リターン、ブレ幅、分散、積立</span></span></a>
+<a class="cat" href="products.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--view-bg)" stroke="var(--view)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">商品</text></svg><span><em>第3章</em><strong>主な金融商品</strong><span>預金・債券・株・投信・ETF・REIT</span></span></a>
+<a class="cat" href="funds.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">指数</text></svg><span><em>第4章</em><strong>投資信託と指数</strong><span>インデックス、費用、為替</span></span></a>
+<a class="cat" href="stocks.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">持分</text></svg><span><em>第5章</em><strong>個別株の基礎</strong><span>100株、PER、外国株の税</span></span></a>
+<a class="cat" href="tax.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--view-bg)" stroke="var(--view)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">制度</text></svg><span><em>第6章</em><strong>制度と税金</strong><span>20.315%、新NISA、iDeCo</span></span></a>
+<a class="cat" href="start.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--warn-bg)" stroke="var(--warn)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">注意</text></svg><span><em>第7章</em><strong>始め方と失敗</strong><span>口座の見方、暴落、詐欺</span></span></a>
+<a class="cat" href="glossary.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--surface)" stroke="var(--text)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">用語</text></svg><span><em>付録</em><strong>用語集</strong><span>五十音順。ページ内で検索できます。</span></span></a>
+<a class="cat" href="sources.html"><svg viewBox="0 0 96 72" aria-hidden="true"><rect x="8" y="8" width="80" height="56" rx="12" fill="var(--surface)" stroke="var(--text)" stroke-width="2"/><text x="48" y="42" text-anchor="middle" font-size="15" fill="var(--text)" font-weight="700">出典</text></svg><span><em>付録</em><strong>出典・免責</strong><span>確認日は2026年11月15日。最新は公式サイトで。</span></span></a>
+</div>
+<h2>文章の三つの色</h2>
+<ul>
+  <li><span class="badge fact">事実</span>出典のある数値・制度</li>
+  <li><span class="badge mech">仕組み</span>なぜそうなるかの理屈</li>
+  <li><span class="badge view">考え方</span>一般的な見解の例。断定しません</li>
+</ul>
+<p><span class="badge warn">要確認</span>は、一次情報で確認しきれなかった箇所です。推測で数字を埋めていません。</p>
+<p>各章は「結論 → なぜそうなるか → 仕組み → 数字 → よくある誤解 → 理解チェック」です。枝葉は「もう少し詳しく」に折りたたんでいます。シミュレーターの計算はこの端末の中だけで行い、入力値は送りません。利回りはすべて仮定です。</p>
+
+</main>
+<footer>
+  <p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+  <p>お金と投資の基本　最終確認日 2026年11月15日。最新は各公式サイトで確認してください。</p>
+</footer>
+</div>
+<button type="button" id="toTop">上へ</button>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="日本の投資初心者向けに、お金の基本からNISA・インデックス投資・個別株の仕組みを、一次情報に基づいて解説する教育ページです。投資勧誘ではありません。">
+<meta name="color-scheme" content="light dark">
+<title>第5章 個別株の基礎｜お金と投資の基本</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<div class="progress" id="progress" role="progressbar" aria-label="読んだ割合" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<div class="topbar">
+  <a class="brand" href="index.html">お金と投資の基本</a>
+  <span class="spacer"></span>
+  <button type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer">目次</button>
+</div>
+<div id="drawer" class="drawer" hidden>
+  <nav aria-label="ページ">
+    <button type="button" id="closeDrawer">閉じる</button>
+    <a href="index.html">目次</a>
+    <a href="money.html">第1章 お金の基本</a>
+    <a href="invest.html">第2章 投資とは何か</a>
+    <a href="products.html">第3章 主な金融商品</a>
+    <a href="funds.html">第4章 投資信託とインデックス</a>
+    <a href="stocks.html" aria-current="page">第5章 個別株の基礎</a>
+    <a href="tax.html">第6章 制度と税金</a>
+    <a href="start.html">第7章 始め方と失敗パターン</a>
+    <a href="glossary.html">用語集</a>
+    <a href="sources.html">出典・更新履歴・免責</a>
+  </nav>
+</div>
+<div class="wrap">
+<p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+<main id="main">
+<section id="ch5" aria-labelledby="ch5-title">
+  <h1 id="ch5-title">第5章　個別株の基礎</h1>
+  <p class="confirm">最終確認日：2026年11月15日。銘柄の例は仕組みの説明に限る場合だけにし、売買の推奨はしません。呼値や手数料は証券会社とJPXで確認してください。</p>
+  <h2>結論</h2>
+  <p>個別株は一社の持分です。東証の内国株の売買単位は100株です。PER・PBR・ROEは値段と利益・純資産の比率であり、それだけで割安・割高とは決まりません。一社に集中すると、その会社固有の出来事の影響をそのまま受けます。</p>
+
+  <h2>なぜそうなるか</h2>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>会社が発行した株は、証券会社を通じて取引所で売買されます。取引所は、値段と数量の注文を突き合わせます。多数の会社を一つのファンドにまとめると、一社の悪化が全体に占める割合は、その会社の組入比率までに限られます。一社だけを持つと、その割合は100%です。指数も、時価総額が大きい会社の比率が高いと、その会社の影響は残ります。第4章のS&amp;P 500は、2026年10月30日時点で上位10銘柄が37.3%でした。</p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 270" aria-hidden="true">
+  <rect x="20" y="40" width="200" height="120" rx="14" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/>
+  <text x="120" y="90" text-anchor="middle" font-size="28" fill="var(--text)" font-weight="700">100株</text>
+  <text x="120" y="122" text-anchor="middle" font-size="15" fill="var(--text)">単元（売買の単位）</text>
+  <rect x="240" y="70" width="90" height="70" rx="12" fill="var(--view-bg)" stroke="var(--view)" stroke-width="2"/>
+  <text x="285" y="102" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">1株</text>
+  <text x="285" y="126" text-anchor="middle" font-size="16" fill="var(--text)">未満</text>
+  <text x="180" y="200" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">市場の基本単位は100株</text>
+  <text x="180" y="232" text-anchor="middle" font-size="15" fill="var(--text)">1株から買えるかは、証券会社のサービスです</text>
+  </svg><figcaption>東証の内国株は、100株を1つの売買単位として注文します。100株に満たない株は、単元未満株として証券会社のサービスで扱われることがあります。</figcaption></figure>
+<h2>仕組み</h2>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>東証の内国株の売買は、各社が定款で定めた単元株式数を単位とし、100株単位に統一されています（2018年10月1日）。上場内国株の単元株式数を100株以外へ変更する決定はできません。<a href="sources.html#src-jpx-unit">JPX「売買単位」</a> <a href="sources.html#src-jpx-unit-g">JPX用語集「売買単位」</a></p>
+    <p>単元未満株式は、1単元に満たない株です。議決権があることを前提とする権利を除き、基本的に1単元以上と同様の権利があるとJPXは説明しています。<a href="sources.html#src-jpx-odd">JPX用語集「単元未満株式」</a> 証券会社が、単元未満株を投資家との間で売買し、市場では単元にまとめて執行する「株式ミニ投資」という制度説明もあります。<a href="sources.html#src-jpx-mini">JPX用語集「株式ミニ投資制度」</a> いまの各社の単元未満株サービスの手数料と取扱いは会社ごとに違うため、このページでは料率を書きません。<span class="badge warn">要確認</span></p>
+  </div>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>指値は「この値段以下で買う」「この値段以上で売る」と条件を付ける注文、成行は値段を指定せずに約定を狙う注文、という区別です。REITについてJPXは、指値も成行もできると書いています。<a href="sources.html#src-jpx-reit">JPX REIT</a> 株式にも同じ種類の注文があります。約定しないこと、成行が予想より不利な値段になることはありえます。呼値の刻みは銘柄と値段で違うため、数字は書きません。</p>
+    <p>決算は、会社が一定期間の売上・利益・資産を公表する手続きです。株価は公表の前から予想を織り込み、公表後に予想との差で動くことがあります。配当は、剰余金の分配を会社が決めたときに支払われます。毎回同じ額とは限りません。</p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 270" aria-hidden="true">
+  <rect x="16" y="20" width="328" height="64" rx="12" fill="var(--fact-bg)" stroke="var(--fact)"/>
+  <text x="180" y="46" text-anchor="middle" font-size="16" fill="var(--text)" font-weight="700">PER ＝ 株価 ÷ 1株あたり利益</text>
+  <text x="180" y="70" text-anchor="middle" font-size="15" fill="var(--text)">利益の何倍の値段か</text>
+  <rect x="16" y="100" width="328" height="64" rx="12" fill="var(--mech-bg)" stroke="var(--mech)"/>
+  <text x="180" y="126" text-anchor="middle" font-size="16" fill="var(--text)" font-weight="700">PBR ＝ 株価 ÷ 1株あたり純資産</text>
+  <text x="180" y="150" text-anchor="middle" font-size="15" fill="var(--text)">純資産の何倍の値段か</text>
+  <rect x="16" y="180" width="328" height="64" rx="12" fill="var(--view-bg)" stroke="var(--view)"/>
+  <text x="180" y="206" text-anchor="middle" font-size="16" fill="var(--text)" font-weight="700">ROE ＝ 利益 ÷ 自己資本</text>
+  <text x="180" y="230" text-anchor="middle" font-size="15" fill="var(--text)">自己資本に対する利益の割合</text>
+  </svg><figcaption>三つとも「割安だから買う」という指示ではありません。定義は本文の式です。</figcaption></figure>
+<h3>PER、PBR、ROE</h3>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>JPX用語集の定義です。</p>
+    <ul>
+      <li>PER（株価収益率）＝ 株価 ÷ 1株当たり当期純利益。利益の何倍の株価かを見ます。<a href="sources.html#src-per">JPX</a></li>
+      <li>PBR（株価純資産倍率）＝ 株価 ÷ 1株当たり純資産。<a href="sources.html#src-pbr">JPX</a></li>
+      <li>ROE（自己資本当期純利益率）＝ 当期純利益 ÷ 前期と当期の自己資本の平均。自己資本は、純資産から株式引受権、新株予約権、非支配株主持分を除いたものです。<a href="sources.html#src-roe">JPX</a></li>
+    </ul>
+  </div>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>利益、純資産、株価が同じ定義で揃うなら、PBR ＝ PER × ROE という関係が成り立ちます。JPXのROEは期首と期末の平均自己資本を使うので、期末の純資産だけで作ったPBR・PERとは厳密には一致しません。</p>
+    <p>限界もあります。利益が一時的に大きい、または赤字だとPERは比較に向きません。会計上の純資産は、事業の再取得価格やブランドと一致しません。ROEが高いことが、借入を増やした結果であることもあります。JPX自身、これらを「投資判断指標の一つ」としており、売買の指示ではありません。</p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 290" aria-hidden="true">
+  <rect x="16" y="20" width="150" height="160" rx="14" fill="var(--warn-bg)" stroke="var(--warn)" stroke-width="2"/>
+  <text x="91" y="70" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">1社</text>
+  <text x="91" y="104" text-anchor="middle" font-size="15" fill="var(--text)">不祥事や倒産が</text>
+  <text x="91" y="130" text-anchor="middle" font-size="15" fill="var(--text)">全体に効く</text>
+  <rect x="194" y="20" width="150" height="160" rx="14" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/>
+  <text x="269" y="58" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">多くの会社</text>
+  <circle cx="239" cy="110" r="10" fill="var(--c1)"/>
+  <circle cx="269" cy="110" r="10" fill="var(--warn)"/>
+  <circle cx="299" cy="110" r="10" fill="var(--c1)"/>
+  <circle cx="254" cy="140" r="10" fill="var(--c1)"/>
+  <circle cx="284" cy="140" r="10" fill="var(--c1)"/>
+  <text x="180" y="220" text-anchor="middle" font-size="16" fill="var(--text)">赤い1社が悪くても、残りが薄める</text>
+  <text x="180" y="250" text-anchor="middle" font-size="16" fill="var(--text)">割合が大きい会社の影響は残ります</text>
+  </svg><figcaption>一社だけ持つと、その会社の出来事がまるごと効きます。多くの会社に分けると、一社の影響はその割合までに収まりやすくなります。市場全体の下落は残ります。</figcaption></figure>
+<h3>個別株に残りやすいリスク</h3>
+  <ul>
+    <li>企業固有リスク：不祥事、製品の失敗、競争の変化。指数では組入比率まで希薄化されやすい</li>
+    <li>倒産：株主は債権者よりあとに残るため、株の価値がほぼなくなることがあります</li>
+    <li>流動性：売買が少ないと、欲しい値段で売れない、売ると値段が大きく動く、ということが起きます</li>
+  </ul>
+  <p>指数は一社の倒産の影響を比率まで抑えられますが、第4章のとおり比率が偏っている指数では、大きい会社の影響は残ります。市場全体の下落は指数にも残ります。</p>
+
+  <figure class="figure"><svg viewBox="0 0 360 310" aria-hidden="true">
+  <rect x="40" y="24" width="280" height="56" rx="12" fill="var(--fact-bg)" stroke="var(--fact)"/>
+  <text x="180" y="58" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">米国株の配当</text>
+  <path d="M180 80 V104" stroke="var(--text)" stroke-width="2" fill="none"/><path d="M173 100 L180 112 L187 100" fill="var(--text)"/>
+  <rect x="40" y="116" width="280" height="56" rx="12" fill="var(--view-bg)" stroke="var(--view)"/>
+  <text x="180" y="150" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">米国で、上限10%が普通</text>
+  <path d="M180 172 V196" stroke="var(--text)" stroke-width="2" fill="none"/><path d="M173 192 L180 204 L187 192" fill="var(--text)"/>
+  <rect x="40" y="208" width="280" height="72" rx="12" fill="var(--warn-bg)" stroke="var(--warn)"/>
+  <text x="180" y="240" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">日本でも課税されうる</text>
+  <text x="180" y="266" text-anchor="middle" font-size="15" fill="var(--text)">NISAは日本の所得税が非課税</text>
+  </svg><figcaption>米国の上場株の配当は、条約上、米国側の上限が10%になる区分が普通です。日本の課税は別にかかります。NISAでも、米国で引かれた税は外国税額控除の対象になりません。</figcaption></figure>
+<h3>外国株と税の入口</h3>
+  <div class="card fact">
+    <p><span class="badge fact">事実</span>財務省がまとめた日米租税条約のポイントでは、ポートフォリオ配当（持株割合が親子会社の区分に入らない「その他」）の源泉地国の限度税率は10%です。<a href="sources.html#src-treaty">財務省「日米租税条約のポイント」</a> 日本に住む個人が米国の上場株の配当を受け取る場合、通常はこの区分に当たります。条約の軽減を受ける手続きをしない場合の米国の国内法上の税率は、今回の確認では一次資料を取り切れていないため書きません。<span class="badge warn">要確認</span></p>
+    <p>日本側では、課税口座の配当は第6章の税率の対象になりえます。外国で課された所得税は、一定の限度まで日本の所得税から差し引く外国税額控除の対象になりえます。ただし、NISAなど非課税口座の配当に対する外国所得税は、外国税額控除の対象になりません。<a href="sources.html#src-nta-1240">国税庁 No.1240</a>（対象にならないものとして、措置法第9条の8の非課税口座内の配当等に課される外国所得税を挙げています）</p>
+    <p>加えて、円とドルの交換レートでも円建ての受取額は変わります。これは第4章の為替の話と同じです。</p>
+  </div>
+
+  <h2>数字で見る</h2>
+  <div class="table-wrap">
+    <table>
+      <caption>個別株のまわりで確認した制度上の数字</caption>
+      <thead><tr><th>項目</th><th>内容</th><th>出典</th></tr></thead>
+      <tbody>
+        <tr><td>内国株の売買単位</td><td>100株</td><td><a href="sources.html#src-jpx-unit">JPX</a></td></tr>
+        <tr><td>PER</td><td>株価 ÷ 1株当たり当期純利益</td><td><a href="sources.html#src-per">JPX用語集</a></td></tr>
+        <tr><td>PBR</td><td>株価 ÷ 1株当たり純資産</td><td><a href="sources.html#src-pbr">JPX用語集</a></td></tr>
+        <tr><td>ROE</td><td>当期純利益 ÷ 自己資本の前期・当期平均</td><td><a href="sources.html#src-roe">JPX用語集</a></td></tr>
+        <tr><td>米国配当の条約限度（ポートフォリオ）</td><td>源泉地国 10%</td><td><a href="sources.html#src-treaty">財務省</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>個別の株価、PERの「いまの平均」は載せていません。</p>
+
+  <h2>よくある誤解</h2>
+  <ul>
+    <li>「PERが低い＝買い」は指標の定義から出てきません。利益が一時的に膨らんでいるだけ、という場合もあります。</li>
+    <li>「有名な会社は倒産しない」は仕組み上の保証ではありません。株主の権利は残余です。</li>
+    <li>「NISAなら米国の源泉税も戻る」は、外国税額控除の対象外という国税庁の整理と合いません。日本の所得税が非課税であることと、米国が源泉で徴収することは別です。</li>
+  </ul>
+
+  <h2>理解チェック</h2>
+  <form class="quiz card" data-explain="東証の内国株の売買単位は100株です。単元未満は、証券会社のサービスで扱われることがあります。">
+    <fieldset>
+      <legend>問1　東証に上場する内国株の売買単位はどれですか。</legend>
+      <label><input type="radio" name="q51" value="a">1株</label>
+      <label><input type="radio" name="q51" value="b">100株</label>
+      <label><input type="radio" name="q51" value="c">1,000株だけが法令で義務</label>
+    </fieldset>
+    <button type="submit">答えを見る</button>
+    <p class="quiz-result" aria-live="polite"></p>
+  </form>
+  <form class="quiz card" data-explain="PERは株価が1株利益の何倍かを示す比率です。利益の質や一時的な増減では、低さが割安を意味しません。">
+    <fieldset>
+      <legend>問2　PERについて、定義に沿っているものはどれですか。</legend>
+      <label><input type="radio" name="q52" value="a">低いほど、必ずほかの株より割安で、買うべきである</label>
+      <label><input type="radio" name="q52" value="b">株価を1株当たり当期純利益で割った比率で、限界がある</label>
+      <label><input type="radio" name="q52" value="c">預金保険の保護額を示す比率である</label>
+    </fieldset>
+    <button type="submit">答えを見る</button>
+    <p class="quiz-result" aria-live="polite"></p>
+  </form>
+
+  <details>
+    <summary>もう少し詳しく</summary>
+    <div class="inner">
+      <p>外国株の注文は、現地の取引所の時間と、証券会社が扱う通貨の交換を挟みます。為替のスプレッド（買うレートと売るレートの差）は費用になりますが、幅は会社と時点で変わるため数字は書きません。</p>
+      <p>配当の権利を取る最終売買日と、配当落ち日は、会社と市場の日程によります。日程の一般論を、特定の銘柄の売買タイミングとして書いてはいません。</p>
+    </div>
+  </details>
+  <h2>この章の出典</h2>
+  <ul class="chapter-src">
+    <li><a href="sources.html#src-jpx-unit">JPX 売買単位</a>、<a href="sources.html#src-jpx-odd">単元未満株式</a>、<a href="sources.html#src-jpx-mini">株式ミニ投資</a></li>
+    <li><a href="sources.html#src-per">PER</a>、<a href="sources.html#src-pbr">PBR</a>、<a href="sources.html#src-roe">ROE</a></li>
+    <li><a href="sources.html#src-treaty">財務省 日米租税条約のポイント</a></li>
+    <li><a href="sources.html#src-nta-1240">国税庁 No.1240 外国税額控除</a></li>
+  </ul>
+</section>
+<nav class="pager" aria-label="章の移動"><a href="funds.html">前へ<br>インデックス</a><a href="index.html">目次</a><a class="primary" href="tax.html">次へ<br>制度と税金</a></nav>
+</main>
+<footer>
+  <p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+  <p>お金と投資の基本　最終確認日 2026年11月15日。最新は各公式サイトで確認してください。</p>
+</footer>
+</div>
+<button type="button" id="toTop">上へ</button>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="日本の投資初心者向けに、お金の基本からNISA・インデックス投資・個別株の仕組みを、一次情報に基づいて解説する教育ページです。投資勧誘ではありません。">
+<meta name="color-scheme" content="light dark">
+<title>第2章 投資とは何か｜お金と投資の基本</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<div class="progress" id="progress" role="progressbar" aria-label="読んだ割合" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+<div class="topbar">
+  <a class="brand" href="index.html">お金と投資の基本</a>
+  <span class="spacer"></span>
+  <button type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer">目次</button>
+</div>
+<div id="drawer" class="drawer" hidden>
+  <nav aria-label="ページ">
+    <button type="button" id="closeDrawer">閉じる</button>
+    <a href="index.html">目次</a>
+    <a href="money.html">第1章 お金の基本</a>
+    <a href="invest.html" aria-current="page">第2章 投資とは何か</a>
+    <a href="products.html">第3章 主な金融商品</a>
+    <a href="funds.html">第4章 投資信託とインデックス</a>
+    <a href="stocks.html">第5章 個別株の基礎</a>
+    <a href="tax.html">第6章 制度と税金</a>
+    <a href="start.html">第7章 始め方と失敗パターン</a>
+    <a href="glossary.html">用語集</a>
+    <a href="sources.html">出典・更新履歴・免責</a>
+  </nav>
+</div>
+<div class="wrap">
+<p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+<main id="main">
+<section id="ch2" aria-labelledby="ch2-title">
+  <h1 id="ch2-title">第2章　投資とは何か</h1>
+  <p class="confirm">最終確認日：2026年11月15日。この章の中心は仕組みの説明です。市場の予想は含みません。</p>
+  <h2>結論</h2>
+  <p>投資のリターンは、保有している間にもらう分配（インカム）と、売ったときの値段の差（値上がり益・値下がり損）から生じます。リスクという言葉は、このページでは「損する可能性」だけではなく、結果が平均からどれだけ外れうるかというブレ幅を指します。</p>
+
+  <h2>なぜそうなるか</h2>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>お金を企業や国に渡すと、相手はそのお金を事業や支出に使います。戻ってくる経路は主に二つです。</p>
+    <ul>
+      <li>インカム：預金の利子、債券の利子、株式の配当、投資信託の分配金、不動産の賃料</li>
+      <li>価格の変化：買ったときより高く売れれば差益、安く売れば差損</li>
+    </ul>
+    <p>合計リターン ≒ インカムの利回り ＋ 価格の変化率です。税金と費用を引く前の話です。分配を出すとその分、手元の資産の価格は下がりやすい、という点は第3章で扱います。</p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 280" aria-hidden="true">
+  <rect x="16" y="20" width="156" height="160" rx="16" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/>
+  <text x="94" y="58" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">インカム</text>
+  <text x="94" y="92" text-anchor="middle" font-size="18" fill="var(--text)">利子</text>
+  <text x="94" y="120" text-anchor="middle" font-size="18" fill="var(--text)">配当</text>
+  <text x="94" y="148" text-anchor="middle" font-size="18" fill="var(--text)">分配・賃料</text>
+  <rect x="188" y="20" width="156" height="160" rx="16" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/>
+  <text x="266" y="58" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">値段の差</text>
+  <text x="266" y="96" text-anchor="middle" font-size="17" fill="var(--text)">高く売れれば</text>
+  <text x="266" y="124" text-anchor="middle" font-size="18" fill="var(--text)">差益</text>
+  <text x="266" y="156" text-anchor="middle" font-size="17" fill="var(--text)">安ければ差損</text>
+  <text x="180" y="220" text-anchor="middle" font-size="18" fill="var(--text)">合計は、この二つを足したもの</text>
+  <text x="180" y="252" text-anchor="middle" font-size="18" fill="var(--text)">に近い、という見方です</text>
+  </svg><figcaption>戻ってくる経路は、持っている間にもらう分配と、売ったときの値段の差です。どちらも、費用と税の前の話です。</figcaption></figure>
+<figure class="figure"><svg viewBox="0 0 360 360" aria-hidden="true">
+  <circle cx="180" cy="250" r="16" fill="var(--text)"/>
+  <text x="180" y="286" text-anchor="middle" font-size="16" fill="var(--text)">出発点</text>
+  <path d="M180 234 L70 70" stroke="var(--mech)" stroke-width="4"/>
+  <path d="M180 234 L180 60" stroke="var(--c1)" stroke-width="4"/>
+  <path d="M180 234 L290 90" stroke="var(--warn)" stroke-width="4"/>
+  <circle cx="70" cy="70" r="12" fill="var(--mech)"/>
+  <circle cx="180" cy="60" r="12" fill="var(--c1)"/>
+  <circle cx="290" cy="90" r="12" fill="var(--warn)"/>
+  <text x="70" y="48" text-anchor="middle" font-size="16" fill="var(--text)">大きく増</text>
+  <text x="180" y="40" text-anchor="middle" font-size="16" fill="var(--text)">少し増</text>
+  <text x="292" y="70" text-anchor="middle" font-size="16" fill="var(--text)">減る</text>
+  <text x="180" y="330" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">この広がりが、ブレ幅です</text>
+  </svg><figcaption>リスクは「必ず損すること」ではなく、結果が平均からどれだけ散らばるかです。下の三本は、模式図です。</figcaption></figure>
+<h2>仕組み</h2>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>「リスク＝危険」だけだと、振れ幅の片側しか見ていません。平均が年5%でも、ある年は大きくプラス、ある年は大きくマイナス、という広がりがありえます。この広がりを統計では標準偏差などで測ります。標準偏差が大きいほど、同じ平均でも結果は散らばります。</p>
+    <p>分散は、値動きが完全には一致しないものを一緒に持つと、全体の振れ幅が個々より狭くなりうる、という性質です。全部が同じ方向に同じだけ動くなら、分けても振れ幅は縮みません。市場全体が下がる動きは、国内株を何銘柄に分けても残ります。これを市場リスク、一社だけの出来事を企業固有リスクと呼ぶことがあります。</p>
+    <p>分散の切り口は、資産（預金・債券・株など）、地域（国内と海外）、時間（一度に買わず時期を分ける）の三つがよく挙げられます。三つ目は次の積立の話です。</p>
+  </div>
+  <div class="card view">
+    <p><span class="badge view">考え方</span>「長く持てば短期の上げ下げがならされやすい」という説明はよくあります。長く持てば元本が残る、という規則が法令や指数の算出要領にあるわけではありません。下落した状態で終わる期間もありえます。長期は魔法の保証ではなく、時間を使って目的と取りうる振れ幅を対応させる、という考え方です。</p>
+  </div>
+
+  <figure class="figure"><svg viewBox="0 0 360 240" aria-hidden="true">
+  <rect x="16" y="24" width="100" height="110" rx="16" fill="var(--fact-bg)" stroke="var(--fact)" stroke-width="2"/>
+  <rect x="130" y="24" width="100" height="110" rx="16" fill="var(--mech-bg)" stroke="var(--mech)" stroke-width="2"/>
+  <rect x="244" y="24" width="100" height="110" rx="16" fill="var(--view-bg)" stroke="var(--view)" stroke-width="2"/>
+  <text x="66" y="78" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">資産</text>
+  <text x="180" y="78" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">地域</text>
+  <text x="294" y="78" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">時間</text>
+  <text x="66" y="108" text-anchor="middle" font-size="16" fill="var(--text)">預金・株…</text>
+  <text x="180" y="108" text-anchor="middle" font-size="16" fill="var(--text)">国内・海外</text>
+  <text x="294" y="108" text-anchor="middle" font-size="16" fill="var(--text)">時期を分ける</text>
+  <text x="180" y="180" text-anchor="middle" font-size="18" fill="var(--text)">市場全体の下落は</text>
+  <text x="180" y="208" text-anchor="middle" font-size="18" fill="var(--text)">国内株を分けても残ります</text>
+  </svg><figcaption>分け方の例は、資産・地域・時間です。全部が同じ方向に動くときは、分けても振れ幅は縮みません。</figcaption></figure>
+<figure class="figure"><svg viewBox="0 0 360 260" aria-hidden="true">
+  <text x="180" y="28" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">毎回 3,000円</text>
+  <rect x="20" y="48" width="100" height="120" rx="12" fill="var(--fact-bg)" stroke="var(--fact)"/>
+  <rect x="130" y="48" width="100" height="120" rx="12" fill="var(--mech-bg)" stroke="var(--mech)"/>
+  <rect x="240" y="48" width="100" height="120" rx="12" fill="var(--view-bg)" stroke="var(--view)"/>
+  <text x="70" y="80" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">100円</text>
+  <text x="180" y="80" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">50円</text>
+  <text x="290" y="80" text-anchor="middle" font-size="18" fill="var(--text)" font-weight="700">150円</text>
+  <text x="70" y="116" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">30口</text>
+  <text x="180" y="116" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">60口</text>
+  <text x="290" y="116" text-anchor="middle" font-size="20" fill="var(--text)" font-weight="700">20口</text>
+  <text x="70" y="146" text-anchor="middle" font-size="15" fill="var(--muted)">高い</text>
+  <text x="180" y="146" text-anchor="middle" font-size="15" fill="var(--muted)">安い</text>
+  <text x="290" y="146" text-anchor="middle" font-size="15" fill="var(--muted)">高い</text>
+  <text x="180" y="204" text-anchor="middle" font-size="17" fill="var(--text)">合計110口。平均は約81.8円</text>
+  <text x="180" y="234" text-anchor="middle" font-size="15" fill="var(--text)">元本を下回ったまま終わることもあります</text>
+  </svg><figcaption>毎回3,000円の計算例です。値段が安い回ほど口数が増えます。上がり続ける並びでは、最初にまとめて買った方が口数は多くなります。</figcaption></figure>
+<h3>積立（ドルコスト平均法）の仕組みと限界</h3>
+  <div class="card mech">
+    <p><span class="badge mech">仕組み</span>毎回同じ金額で買うと、値段が安いときは口数（株数）が多く、高いときは少なくなります。買った口数で割った平均取得単価は、値段の単純平均より低くなりやすいです。これは調和平均が算術平均以下になる、という数学の性質です。</p>
+    <p>計算例（実在の商品ではありません）。毎回3,000円を買います。</p>
+    <div class="table-wrap">
+      <table>
+        <caption>値段の並びで、積立と一括の口数が変わる例</caption>
+        <thead><tr><th>値段の並び</th><th>毎回3,000円で買った口数</th><th>最初に9,000円を買った口数</th></tr></thead>
+        <tbody>
+          <tr><td>100 → 50 → 150</td><td>30＋60＋20＝110口。平均取得単価は約81.8</td><td>90口（単価100）</td></tr>
+          <tr><td>100 → 150 → 200</td><td>30＋20＋15＝65口</td><td>90口</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>値段が上がり続ける並びでは、最初にまとめて買った方が口数は多くなります。積立は「いつ買っても得」ではありません。値段が平均取得単価を下回ったまま終われば、金額は元本を下回ります。積立が消せるのは、一時点に集中して買うタイミングの偏りであって、値下がりそのものではありません。</p>
+  </div>
+
+  <h2>数字で見る</h2>
+  <p>この章に、市場の予想利回りとしての固定値はありません。下の図は、平均と標準偏差をこちらで仮定した乱数です。</p>
+
+  <h2>値動きのブレ体感</h2>
+  <div class="card">
+    <p>毎年の収益率を「平均 ＋ 標準偏差 × 正規乱数」とし、−100%より下にはしない、という単純なモデルです。実際の市場は正規分布ではなく、大きな変動がより起きやすいことがあります。将来の分布の予測ではありません。</p>
+    <label class="field">平均リターン（年、%）<input id="v-mu" type="number" inputmode="decimal" value="5" step="0.1"></label>
+    <label class="field">ブレ幅A 標準偏差（%）<input id="v-s1" type="number" inputmode="decimal" value="8" min="0" step="0.1"></label>
+    <label class="field">ブレ幅B 標準偏差（%）<input id="v-s2" type="number" inputmode="decimal" value="20" min="0" step="0.1"></label>
+    <label class="field">年数<input id="v-years" type="number" inputmode="numeric" value="20" min="1" max="40"></label>
+    <label class="field">経路の本数<input id="v-paths" type="number" inputmode="numeric" value="400" min="50" max="2000"></label>
+    <div class="row">
+      <button type="button" class="primary" id="v-run">この乱数で描く</button>
+      <button type="button" id="v-reroll">別の乱数でもう一度</button>
+    </div>
+    <div class="legend" aria-hidden="true"><span><i class="swatch" style="background:var(--c1)"></i>ブレ幅A</span><span><i class="swatch" style="background:var(--c2)"></i>ブレ幅B</span></div>
+    <div class="canvas-box"><canvas id="v-chart" data-h="240" role="img" aria-describedby="v-out"></canvas></div>
+    <p id="v-out" class="result" aria-live="polite"></p>
+  </div>
+
+  <h2>よくある誤解</h2>
+  <ul>
+    <li>「リスクが低い＝損しない」ではありません。振れ幅が狭くても、平均自体が物価を下回れば購買力は減りえます。</li>
+    <li>「分散すれば市場全体の下落も消える」わけではありません。</li>
+    <li>「積立は一括より必ず有利」ではありません。上の表の二行目がその反例です。</li>
+  </ul>
+
+  <h2>理解チェック</h2>
+  <form class="quiz card" data-explain="このページでは、リスクを結果のブレ幅として扱います。損する可能性はその下側の一部です。">
+    <fieldset>
+      <legend>問1　このページでいうリスクに最も近いものはどれですか。</legend>
+      <label><input type="radio" name="q21" value="a">元本が必ず減ること</label>
+      <label><input type="radio" name="q21" value="b">結果がどれだけ散らばるかという不確実性</label>
+      <label><input type="radio" name="q21" value="c">手数料の名前</label>
+    </fieldset>
+    <button type="submit">答えを見る</button>
+    <p class="quiz-result" aria-live="polite"></p>
+  </form>
+  <form class="quiz card" data-explain="値段が上がり続ける並びでは、同じ総額でも最初に買った方が口数は多くなります。積立は取得単価を自動的に有利にする魔法ではありません。">
+    <fieldset>
+      <legend>問2　ドルコスト平均法について、仕組みとして正しいものはどれですか。</legend>
+      <label><input type="radio" name="q22" value="a">どんな値動きでも、最初に一括で買うより必ず得をする</label>
+      <label><input type="radio" name="q22" value="b">毎回同じ金額で買うと、安いときは多く、高いときは少なく買う</label>
+      <label><input type="radio" name="q22" value="c">値下がり損を制度として消す</label>
+    </fieldset>
+    <button type="submit">答えを見る</button>
+    <p class="quiz-result" aria-live="polite"></p>
+  </form>
+
+  <details>
+    <summary>もう少し詳しく</summary>
+    <div class="inner">
+      <p>価格が毎期、等確率で＋50%か−50%だと、1回の期待値は0です（0.5×0.5＋0.5×(−0.5)＝0）。しかし2回続けると、＋50%のあと−50%は元の0.75倍です。振れ幅があると、掛け算の世界では「平均はゼロでも、典型的な経路は元本を割りやすい」ことが起きます。リスクを平均だけで見ない理由の一つです。これはコインの計算例であり、株式の分布そのものではありません。</p>
+    </div>
+  </details>
+  <h2>この章の出典</h2>
+  <p>この章の数式と計算例は、確率と平均の性質です。市場実績の引用はありません。税制に触れる章は第6章の出典を使います。</p>
+</section>
+<nav class="pager" aria-label="章の移動"><a href="money.html">前へ<br>お金の基本</a><a href="index.html">目次</a><a class="primary" href="products.html">次へ<br>金融商品</a></nav>
+</main>
+<footer>
+  <p class="disclaimer"><strong>情報提供・教育目的であり、投資勧誘や助言ではありません。最終判断はご自身で。</strong></p>
+  <p>お金と投資の基本　最終確認日 2026年11月15日。最新は各公式サイトで確認してください。</p>
+</footer>
+</div>
+<button type="button" id="toTop">上へ</button>
+<script src="app.js"></script>
+</body>
+</html>
